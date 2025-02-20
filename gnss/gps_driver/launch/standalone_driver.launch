@@ -1,0 +1,10 @@
+<launch>
+  <!-- Default port, can be overridden by passing port:=/dev/ttyUSB1 for example -->
+  <arg name="port" default="/dev/ttyUSB0" />
+
+  <!-- Launch the GPS driver node -->
+  <node pkg="gps_driver" type="standalone_driver.py" name="gps_driver" output="screen">
+    <!-- Pass the port argument to the node -->
+    <param name="port" value="$(arg port)" />
+  </node>
+</launch>

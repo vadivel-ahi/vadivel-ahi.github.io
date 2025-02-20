@@ -1,0 +1,2 @@
+I have succesfully completed the Ubuntu 20.04 LTS install.
+I am ready to use Git and Github.
