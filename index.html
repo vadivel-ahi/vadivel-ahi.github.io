@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name - Robotics Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            background: linear-gradient(135deg, #0a1628 0%, #1a2332 100%);
             color: #e4e4e7;
             line-height: 1.6;
         }
@@ -27,38 +27,45 @@
         header {
             text-align: center;
             padding: 80px 20px;
-            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            background: linear-gradient(135deg, #1a2f45 0%, #2a4058 100%);
             border-radius: 15px;
             margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+            border: 2px solid rgba(255, 107, 53, 0.2);
         }
 
         header h1 {
             font-size: 3em;
-            color: #00d9ff;
+            background: linear-gradient(135deg, #ff6b35 0%, #ffa94d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 10px;
-            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+            text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
         }
 
         header p {
             font-size: 1.3em;
-            color: #a0a0a0;
+            color: #8fb8de;
         }
 
         .section {
-            background: rgba(22, 33, 62, 0.6);
+            background: rgba(26, 47, 69, 0.7);
             padding: 40px;
             margin-bottom: 30px;
             border-radius: 15px;
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 169, 77, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
         }
 
         .section h2 {
-            color: #00d9ff;
+            background: linear-gradient(135deg, #ff6b35 0%, #ffa94d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 2em;
             margin-bottom: 25px;
-            border-bottom: 3px solid #00d9ff;
+            border-bottom: 3px solid #ff6b35;
             padding-bottom: 10px;
         }
 
@@ -68,27 +75,28 @@
         }
 
         .experience-item, .project-item {
-            background: rgba(15, 48, 96, 0.5);
+            background: linear-gradient(135deg, rgba(42, 64, 88, 0.6) 0%, rgba(26, 47, 69, 0.6) 100%);
             padding: 25px;
             margin-bottom: 25px;
             border-radius: 10px;
-            border-left: 4px solid #00d9ff;
+            border-left: 4px solid #ff6b35;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .experience-item:hover, .project-item:hover {
             transform: translateX(10px);
-            box-shadow: 0 5px 20px rgba(0, 217, 255, 0.3);
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+            border-left: 4px solid #ffa94d;
         }
 
         .experience-item h3, .project-item h3 {
-            color: #00d9ff;
+            color: #ffa94d;
             font-size: 1.5em;
             margin-bottom: 10px;
         }
 
         .experience-item .date {
-            color: #ff6b6b;
+            color: #8fb8de;
             font-style: italic;
             margin-bottom: 10px;
         }
@@ -104,14 +112,20 @@
             max-width: 300px;
             height: auto;
             border-radius: 8px;
-            border: 2px solid rgba(0, 217, 255, 0.3);
+            border: 2px solid rgba(255, 169, 77, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .media-container img:hover {
+            transform: scale(1.05);
+            border-color: #ff6b35;
         }
 
         .media-container video {
             max-width: 400px;
             height: auto;
             border-radius: 8px;
-            border: 2px solid rgba(0, 217, 255, 0.3);
+            border: 2px solid rgba(255, 169, 77, 0.4);
         }
 
         .skills-grid {
@@ -122,22 +136,27 @@
         }
 
         .skill-item {
-            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            background: linear-gradient(135deg, #2a4058 0%, #1a2f45 100%);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            border: 1px solid rgba(0, 217, 255, 0.3);
-            transition: transform 0.3s ease;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .skill-item:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(0, 217, 255, 0.4);
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.5);
+            border-color: #ff6b35;
         }
 
         .skill-item h4 {
-            color: #00d9ff;
+            color: #ffa94d;
             margin-bottom: 10px;
+        }
+
+        .skill-item p {
+            color: #8fb8de;
         }
 
         .fun-facts {
@@ -147,28 +166,31 @@
         }
 
         .fact-card {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            background: linear-gradient(135deg, #ff6b35 0%, #f77f4e 100%);
             padding: 25px;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .fact-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.6);
         }
 
         .fact-card p {
             font-size: 1.1em;
             color: #fff;
+            font-weight: 500;
         }
 
         footer {
             text-align: center;
             padding: 30px;
-            color: #a0a0a0;
+            color: #8fb8de;
             margin-top: 40px;
+            border-top: 2px solid rgba(255, 107, 53, 0.2);
         }
 
         @media (max-width: 768px) {
@@ -191,14 +213,14 @@
     <div class="container">
         <header>
             <h1>Your Name</h1>
-            <p>Software Developer | Designer | Creative Thinker</p>
+            <p>Robotics Engineer | AI Specialist | Automation Expert</p>
         </header>
 
         <section class="section">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>Hello! I'm a passionate developer with a love for creating innovative solutions and beautiful designs. With several years of experience in web development and software engineering, I strive to build applications that make a difference.</p>
-                <p>I believe in continuous learning and always pushing the boundaries of what's possible with technology.</p>
+                <p>Hello! I'm a passionate robotics engineer with expertise in autonomous systems, computer vision, and mechatronics. My journey in robotics began with a fascination for how machines can interact with the physical world, and has evolved into a career dedicated to pushing the boundaries of automation and intelligent systems.</p>
+                <p>I specialize in designing and programming robots that solve real-world problems, from industrial automation to service robotics. My work combines mechanical design, electronics, and cutting-edge AI to create systems that are both efficient and innovative.</p>
             </div>
         </section>
 
@@ -206,22 +228,22 @@
             <h2>Experience</h2>
             
             <div class="experience-item">
-                <h3>Senior Developer - Tech Company</h3>
+                <h3>Senior Robotics Engineer - Autonomous Systems Lab</h3>
                 <p class="date">January 2022 - Present</p>
-                <p>Led a team of 5 developers in creating a revolutionary web application that improved user engagement by 150%. Implemented modern frameworks and best practices.</p>
+                <p>Leading development of autonomous mobile robots for warehouse logistics. Implemented advanced path planning algorithms and sensor fusion techniques. Reduced navigation errors by 85% and increased throughput by 120%.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/0f3460/00d9ff?text=Project+Screenshot" alt="Work Project">
+                    <img src="https://via.placeholder.com/300x200/2a4058/ffa94d?text=Autonomous+Robot" alt="Autonomous Robot">
                 </div>
             </div>
 
             <div class="experience-item">
-                <h3>Full Stack Developer - Startup Inc</h3>
+                <h3>Robotics Software Engineer - Industrial Automation Corp</h3>
                 <p class="date">June 2019 - December 2021</p>
-                <p>Built and maintained multiple client-facing applications. Collaborated with designers to create seamless user experiences.</p>
+                <p>Developed control systems for robotic arms used in manufacturing. Integrated computer vision for quality control and implemented ROS-based frameworks for multi-robot coordination.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/16213e/00d9ff?text=Team+Photo" alt="Team">
+                    <img src="https://via.placeholder.com/300x200/1a2f45/ffa94d?text=Robotic+Arm" alt="Robotic Arm">
                     <video controls>
-                        <source src="your-video.mp4" type="video/mp4">
+                        <source src="robot-demo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -232,30 +254,42 @@
             <h2>Projects</h2>
             
             <div class="project-item">
-                <h3>E-Commerce Platform</h3>
-                <p>A full-featured online shopping platform with real-time inventory management, secure payment processing, and responsive design. Built with React, Node.js, and MongoDB.</p>
+                <h3>Autonomous Delivery Robot</h3>
+                <p>Designed and built a fully autonomous delivery robot capable of navigating urban environments. Features include LiDAR-based SLAM, obstacle avoidance, and secure package delivery mechanisms. Successfully completed over 500 test deliveries.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/0f3460/00d9ff?text=E-Commerce+UI" alt="E-commerce">
-                    <img src="https://via.placeholder.com/300x200/16213e/00d9ff?text=Dashboard" alt="Dashboard">
+                    <img src="https://via.placeholder.com/300x200/2a4058/ffa94d?text=Delivery+Bot" alt="Delivery Robot">
+                    <img src="https://via.placeholder.com/300x200/1a2f45/ffa94d?text=Navigation+System" alt="Navigation">
                 </div>
             </div>
 
             <div class="project-item">
-                <h3>AI Chat Application</h3>
-                <p>An intelligent chatbot powered by machine learning algorithms. Features natural language processing and contextual understanding.</p>
+                <h3>Humanoid Service Robot</h3>
+                <p>Developed a humanoid robot for customer service applications. Integrated natural language processing, facial recognition, and gesture control. The robot can engage in conversations, answer queries, and perform basic tasks autonomously.</p>
                 <div class="media-container">
                     <video controls>
-                        <source src="your-project-demo.mp4" type="video/mp4">
+                        <source src="humanoid-interaction.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
 
             <div class="project-item">
-                <h3>Portfolio Website Builder</h3>
-                <p>A drag-and-drop website builder that allows users to create professional portfolios in minutes. No coding required!</p>
+                <h3>Swarm Robotics System</h3>
+                <p>Created a multi-robot coordination system where 10+ robots work collaboratively to complete complex tasks. Implemented distributed algorithms for task allocation and collision-free navigation in shared workspaces.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/0f3460/00d9ff?text=Builder+Interface" alt="Builder">
+                    <img src="https://via.placeholder.com/300x200/2a4058/ffa94d?text=Swarm+Robots" alt="Swarm System">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>Robotic Gripper with Tactile Sensing</h3>
+                <p>Engineered an adaptive gripper with integrated force and tactile sensors. Uses machine learning to determine optimal grasp strategies for objects of varying shapes, sizes, and materials. Achieved 95% success rate on diverse object sets.</p>
+                <div class="media-container">
+                    <img src="https://via.placeholder.com/300x200/1a2f45/ffa94d?text=Smart+Gripper" alt="Robotic Gripper">
+                    <video controls>
+                        <source src="gripper-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </section>
@@ -264,35 +298,51 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <h4>JavaScript</h4>
+                    <h4>ROS/ROS2</h4>
                     <p>Expert</p>
-                </div>
-                <div class="skill-item">
-                    <h4>React</h4>
-                    <p>Advanced</p>
-                </div>
-                <div class="skill-item">
-                    <h4>Node.js</h4>
-                    <p>Advanced</p>
                 </div>
                 <div class="skill-item">
                     <h4>Python</h4>
-                    <p>Intermediate</p>
-                </div>
-                <div class="skill-item">
-                    <h4>UI/UX Design</h4>
-                    <p>Advanced</p>
-                </div>
-                <div class="skill-item">
-                    <h4>SQL</h4>
-                    <p>Advanced</p>
-                </div>
-                <div class="skill-item">
-                    <h4>Git</h4>
                     <p>Expert</p>
                 </div>
                 <div class="skill-item">
-                    <h4>AWS</h4>
+                    <h4>C++</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Computer Vision</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h4>SLAM</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h4>CAD (SolidWorks)</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Machine Learning</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Arduino/Raspberry Pi</h4>
+                    <p>Expert</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Gazebo Simulation</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Control Systems</h4>
+                    <p>Expert</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Sensor Fusion</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-item">
+                    <h4>PCB Design</h4>
                     <p>Intermediate</p>
                 </div>
             </div>
@@ -302,22 +352,22 @@
             <h2>Fun Facts About Me</h2>
             <div class="fun-facts">
                 <div class="fact-card">
-                    <p>☕ I drink at least 5 cups of coffee daily</p>
+                    <p>🤖 Built my first robot at age 12</p>
                 </div>
                 <div class="fact-card">
-                    <p>🎮 Avid gamer with 1000+ hours in strategy games</p>
+                    <p>🏆 Won 3 international robotics competitions</p>
                 </div>
                 <div class="fact-card">
-                    <p>🌍 Visited 15 countries and counting</p>
+                    <p>🔧 Have a collection of 50+ servo motors</p>
                 </div>
                 <div class="fact-card">
-                    <p>📚 Reading a book every week</p>
+                    <p>🎮 Love playing robot simulation games</p>
                 </div>
                 <div class="fact-card">
-                    <p>🎸 Learning to play guitar in my spare time</p>
+                    <p>📚 Read sci-fi novels about AI and robots</p>
                 </div>
                 <div class="fact-card">
-                    <p>🏃 Run 5K every morning</p>
+                    <p>🎬 Favorite movie is "WALL-E"</p>
                 </div>
             </div>
         </section>
