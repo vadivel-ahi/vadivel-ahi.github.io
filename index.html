@@ -13,8 +13,9 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0a1628 0%, #1a2332 100%);
-            color: #e4e4e7;
+            background: linear-gradient(135deg, #0d1321 0%, #1d2d44 30%, #2a3f5f 60%, #1e2749 100%);
+            background-attachment: fixed;
+            color: #f0f0f0;
             line-height: 1.6;
         }
 
@@ -27,78 +28,92 @@
         header {
             text-align: center;
             padding: 80px 20px;
-            background: linear-gradient(135deg, #1a2f45 0%, #2a4058 100%);
+            background: linear-gradient(135deg, rgba(29, 45, 68, 0.9) 0%, rgba(30, 39, 73, 0.9) 100%);
             border-radius: 15px;
             margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
-            border: 2px solid rgba(255, 107, 53, 0.2);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(10px);
         }
 
         header h1 {
             font-size: 3em;
-            background: linear-gradient(135deg, #ff6b35 0%, #ffa94d 100%);
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5b3 50%, #d4af37 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 10px;
-            text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         header p {
             font-size: 1.3em;
-            color: #8fb8de;
+            color: #c0c0c0;
+            font-weight: 300;
         }
 
         .section {
-            background: rgba(26, 47, 69, 0.7);
+            background: linear-gradient(135deg, rgba(29, 45, 68, 0.8) 0%, rgba(30, 39, 73, 0.7) 100%);
             padding: 40px;
             margin-bottom: 30px;
             border-radius: 15px;
-            border: 2px solid rgba(255, 169, 77, 0.2);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(192, 192, 192, 0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
         }
 
         .section h2 {
-            background: linear-gradient(135deg, #ff6b35 0%, #ffa94d 100%);
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5b3 50%, #d4af37 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-size: 2em;
             margin-bottom: 25px;
-            border-bottom: 3px solid #ff6b35;
+            border-bottom: 3px solid #d4af37;
             padding-bottom: 10px;
+            font-weight: 600;
         }
 
         .about-content {
             font-size: 1.1em;
-            color: #d1d1d1;
+            color: #e8e8e8;
+            line-height: 1.8;
         }
 
         .experience-item, .project-item {
-            background: linear-gradient(135deg, rgba(42, 64, 88, 0.6) 0%, rgba(26, 47, 69, 0.6) 100%);
+            background: linear-gradient(135deg, rgba(42, 63, 95, 0.6) 0%, rgba(30, 39, 73, 0.5) 100%);
             padding: 25px;
             margin-bottom: 25px;
             border-radius: 10px;
-            border-left: 4px solid #ff6b35;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #d4af37;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            backdrop-filter: blur(5px);
         }
 
         .experience-item:hover, .project-item:hover {
             transform: translateX(10px);
-            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
-            border-left: 4px solid #ffa94d;
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+            border-left: 4px solid #f4e5b3;
         }
 
         .experience-item h3, .project-item h3 {
-            color: #ffa94d;
+            color: #f4e5b3;
             font-size: 1.5em;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .experience-item .date {
-            color: #8fb8de;
+            color: #9eb3d4;
             font-style: italic;
             margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .experience-item p, .project-item p {
+            color: #d8d8d8;
         }
 
         .media-container {
@@ -112,20 +127,21 @@
             max-width: 300px;
             height: auto;
             border-radius: 8px;
-            border: 2px solid rgba(255, 169, 77, 0.4);
-            transition: transform 0.3s ease;
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
         .media-container img:hover {
             transform: scale(1.05);
-            border-color: #ff6b35;
+            border-color: #d4af37;
+            box-shadow: 0 5px 25px rgba(212, 175, 55, 0.4);
         }
 
         .media-container video {
             max-width: 400px;
             height: auto;
             border-radius: 8px;
-            border: 2px solid rgba(255, 169, 77, 0.4);
+            border: 2px solid rgba(192, 192, 192, 0.4);
         }
 
         .skills-grid {
@@ -136,27 +152,30 @@
         }
 
         .skill-item {
-            background: linear-gradient(135deg, #2a4058 0%, #1a2f45 100%);
+            background: linear-gradient(135deg, rgba(42, 63, 95, 0.7) 0%, rgba(30, 39, 73, 0.7) 100%);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            border: 2px solid rgba(255, 107, 53, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(192, 192, 192, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            backdrop-filter: blur(5px);
         }
 
         .skill-item:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.5);
-            border-color: #ff6b35;
+            box-shadow: 0 5px 25px rgba(212, 175, 55, 0.4);
+            border-color: #d4af37;
         }
 
         .skill-item h4 {
-            color: #ffa94d;
+            color: #f4e5b3;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .skill-item p {
-            color: #8fb8de;
+            color: #c0c0c0;
+            font-weight: 300;
         }
 
         .fun-facts {
@@ -166,31 +185,43 @@
         }
 
         .fact-card {
-            background: linear-gradient(135deg, #ff6b35 0%, #f77f4e 100%);
+            background: linear-gradient(135deg, #d4af37 0%, #b8922d 100%);
             padding: 25px;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(244, 229, 179, 0.3);
         }
 
         .fact-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.6);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
         }
 
         .fact-card p {
             font-size: 1.1em;
-            color: #fff;
-            font-weight: 500;
+            color: #1d2d44;
+            font-weight: 600;
         }
 
         footer {
             text-align: center;
             padding: 30px;
-            color: #8fb8de;
+            color: #9eb3d4;
             margin-top: 40px;
-            border-top: 2px solid rgba(255, 107, 53, 0.2);
+            border-top: 2px solid rgba(192, 192, 192, 0.2);
+            font-weight: 300;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f4e5b3;
         }
 
         @media (max-width: 768px) {
@@ -232,7 +263,7 @@
                 <p class="date">January 2022 - Present</p>
                 <p>Leading development of autonomous mobile robots for warehouse logistics. Implemented advanced path planning algorithms and sensor fusion techniques. Reduced navigation errors by 85% and increased throughput by 120%.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/2a4058/ffa94d?text=Autonomous+Robot" alt="Autonomous Robot">
+                    <img src="https://via.placeholder.com/300x200/2a3f5f/f4e5b3?text=Autonomous+Robot" alt="Autonomous Robot">
                 </div>
             </div>
 
@@ -241,7 +272,7 @@
                 <p class="date">June 2019 - December 2021</p>
                 <p>Developed control systems for robotic arms used in manufacturing. Integrated computer vision for quality control and implemented ROS-based frameworks for multi-robot coordination.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/1a2f45/ffa94d?text=Robotic+Arm" alt="Robotic Arm">
+                    <img src="https://via.placeholder.com/300x200/1d2d44/f4e5b3?text=Robotic+Arm" alt="Robotic Arm">
                     <video controls>
                         <source src="robot-demo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -257,8 +288,8 @@
                 <h3>Autonomous Delivery Robot</h3>
                 <p>Designed and built a fully autonomous delivery robot capable of navigating urban environments. Features include LiDAR-based SLAM, obstacle avoidance, and secure package delivery mechanisms. Successfully completed over 500 test deliveries.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/2a4058/ffa94d?text=Delivery+Bot" alt="Delivery Robot">
-                    <img src="https://via.placeholder.com/300x200/1a2f45/ffa94d?text=Navigation+System" alt="Navigation">
+                    <img src="https://via.placeholder.com/300x200/2a3f5f/f4e5b3?text=Delivery+Bot" alt="Delivery Robot">
+                    <img src="https://via.placeholder.com/300x200/1d2d44/f4e5b3?text=Navigation+System" alt="Navigation">
                 </div>
             </div>
 
@@ -277,7 +308,7 @@
                 <h3>Swarm Robotics System</h3>
                 <p>Created a multi-robot coordination system where 10+ robots work collaboratively to complete complex tasks. Implemented distributed algorithms for task allocation and collision-free navigation in shared workspaces.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/2a4058/ffa94d?text=Swarm+Robots" alt="Swarm System">
+                    <img src="https://via.placeholder.com/300x200/2a3f5f/f4e5b3?text=Swarm+Robots" alt="Swarm System">
                 </div>
             </div>
 
@@ -285,7 +316,7 @@
                 <h3>Robotic Gripper with Tactile Sensing</h3>
                 <p>Engineered an adaptive gripper with integrated force and tactile sensors. Uses machine learning to determine optimal grasp strategies for objects of varying shapes, sizes, and materials. Achieved 95% success rate on diverse object sets.</p>
                 <div class="media-container">
-                    <img src="https://via.placeholder.com/300x200/1a2f45/ffa94d?text=Smart+Gripper" alt="Robotic Gripper">
+                    <img src="https://via.placeholder.com/300x200/1d2d44/f4e5b3?text=Smart+Gripper" alt="Robotic Gripper">
                     <video controls>
                         <source src="gripper-demo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -374,7 +405,7 @@
 
         <footer>
             <p>&copy; 2026 Your Name. All rights reserved.</p>
-            <p>Contact: your.email@example.com | GitHub | LinkedIn</p>
+            <p>Contact: your.email@example.com | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
         </footer>
     </div>
 </body>
