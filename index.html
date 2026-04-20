@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahilesh Vadivel - Robotics Engineer</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f8f9fa;
         }
-        
-        /* Navigation */
+
+        /* ── Navigation ── */
         nav {
             background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
             color: white;
@@ -28,406 +24,266 @@
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            flex-wrap: wrap;
-        }
-        
-        nav ul li {
-            margin: 0 1.5rem;
-        }
-        
+        nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+        nav ul li { margin: 0 1.5rem; }
         nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            padding: 0.5rem 0;
-            display: block;
+            color: white; text-decoration: none; font-weight: 500;
+            transition: color 0.3s; padding: 0.5rem 0; display: block;
         }
-        
-        nav ul li a:hover {
-            color: #ffd700;
-        }
-        
-        /* Hero Section */
+        nav ul li a:hover { color: #ffd700; }
+
+        /* ── Hero ── */
         .hero {
             background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
+            color: white; padding: 4rem 2rem; text-align: center;
         }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            animation: fadeInDown 1s;
-        }
-        
-        .hero .tagline {
-            font-size: 1.5rem;
-            color: #ffd700;
-            margin-bottom: 1rem;
-        }
-        
+        .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; animation: fadeInDown 1s; }
+        .hero .tagline { font-size: 1.5rem; color: #ffd700; margin-bottom: 1rem; }
         .hero .subtitle {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            line-height: 1.8;
+            font-size: 1.1rem; max-width: 800px;
+            margin: 0 auto 2rem; line-height: 1.8;
         }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
         .btn {
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
+            padding: 0.75rem 2rem; border: none; border-radius: 5px;
+            font-size: 1rem; cursor: pointer; transition: all 0.3s;
+            text-decoration: none; display: inline-block;
         }
-        
-        .btn-primary {
-            background: #ffd700;
-            color: #1e3a5f;
-            font-weight: bold;
-        }
-        
-        .btn-primary:hover {
-            background: #ffed4e;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-secondary:hover {
-            background: white;
-            color: #1e3a5f;
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-        }
-        
+        .btn-primary { background: #ffd700; color: #1e3a5f; font-weight: bold; }
+        .btn-primary:hover { background: #ffed4e; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,215,0,0.3); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: #1e3a5f; }
+
+        /* ── Layout ── */
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+        section { margin-bottom: 4rem; }
         h2 {
-            font-size: 2.5rem;
-            color: #1e3a5f;
-            margin-bottom: 2rem;
-            text-align: center;
-            position: relative;
+            font-size: 2.5rem; color: #1e3a5f;
+            margin-bottom: 2rem; text-align: center; position: relative;
         }
-        
         h2::after {
-            content: '';
-            display: block;
-            width: 100px;
-            height: 4px;
-            background: #ffd700;
-            margin: 1rem auto;
+            content: ''; display: block; width: 100px; height: 4px;
+            background: #ffd700; margin: 1rem auto;
         }
-        
-        h3 {
-            font-size: 1.8rem;
-            color: #2c5282;
-            margin: 1.5rem 0 1rem;
-        }
-        
-        /* Journey Timeline */
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-        
+        h3 { font-size: 1.8rem; color: #2c5282; margin: 1.5rem 0 1rem; }
+
+        /* ── Timeline ── */
+        .timeline { position: relative; padding: 2rem 0; }
         .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 4px;
-            height: 100%;
+            content: ''; position: absolute; left: 50%; transform: translateX(-50%);
+            width: 4px; height: 100%;
             background: linear-gradient(to bottom, #2c5282, #ffd700);
         }
-        
-        .timeline-item {
-            display: flex;
-            margin: 3rem 0;
-            position: relative;
-        }
-        
-        .timeline-item:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-        
+        .timeline-item { display: flex; margin: 3rem 0; position: relative; }
+        .timeline-item:nth-child(odd) { flex-direction: row-reverse; }
         .timeline-content {
-            width: 45%;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            position: relative;
+            width: 45%; padding: 2rem; background: white;
+            border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
-        
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-left: 5%;
-        }
-        
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-right: 5%;
-        }
-        
-        .timeline-date {
-            font-size: 0.9rem;
-            color: #ffd700;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        
+        .timeline-item:nth-child(odd) .timeline-content { margin-left: 5%; }
+        .timeline-item:nth-child(even) .timeline-content { margin-right: 5%; }
+        .timeline-date { font-size: 0.9rem; color: #ffd700; font-weight: bold; margin-bottom: 0.5rem; }
         .timeline-marker {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
-            background: #ffd700;
-            border: 4px solid #2c5282;
-            border-radius: 50%;
+            position: absolute; left: 50%; transform: translateX(-50%);
+            width: 20px; height: 20px; background: #ffd700;
+            border: 4px solid #2c5282; border-radius: 50%;
         }
 
-        /* Project filter tabs */
+        /* ── Filter Tabs ── */
         .filter-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-            margin-bottom: 2.5rem;
+            display: flex; flex-wrap: wrap; gap: 0.75rem;
+            justify-content: center; margin-bottom: 2.5rem;
         }
-
         .filter-tab {
-            padding: 0.5rem 1.25rem;
-            border-radius: 20px;
-            border: 2px solid #2c5282;
-            background: white;
-            color: #2c5282;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.25s;
+            padding: 0.5rem 1.25rem; border-radius: 20px;
+            border: 2px solid #2c5282; background: white;
+            color: #2c5282; font-weight: 600; font-size: 0.9rem;
+            cursor: pointer; transition: all 0.25s;
         }
+        .filter-tab:hover, .filter-tab.active { background: #2c5282; color: white; }
 
-        .filter-tab:hover,
-        .filter-tab.active {
-            background: #2c5282;
-            color: white;
-        }
-        
-        /* Projects Grid */
+        /* ── PROJECT TILES (main view) ── */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
         }
-        
-        .project-card {
+        .project-tile {
             background: white;
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: transform 0.25s, box-shadow 0.25s;
+            border: 1px solid #e8edf2;
+        }
+        .project-tile:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+        }
+        .project-tile.hidden { display: none; }
+
+        .tile-banner {
+            height: 110px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem;
+            position: relative;
+        }
+        .tile-banner.rl      { background: linear-gradient(135deg,#1a472a,#2d6a4f); }
+        .tile-banner.vision  { background: linear-gradient(135deg,#44267a,#6b3fa0); }
+        .tile-banner.nav     { background: linear-gradient(135deg,#7a3400,#b35c00); }
+        .tile-banner.soft    { background: linear-gradient(135deg,#003566,#1565c0); }
+        .tile-banner.safety  { background: linear-gradient(135deg,#5c0a00,#9b1c1c); }
+        .tile-banner.default { background: linear-gradient(135deg,#2c5282,#1e3a5f); }
+
+        .tile-category-badge {
+            position: absolute; top: 10px; right: 10px;
+            background: rgba(255,255,255,0.2); color: white;
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+            padding: 3px 8px; border-radius: 10px; text-transform: uppercase;
         }
 
-        .project-card.hidden {
-            display: none;
+        .tile-body { padding: 1rem 1.1rem 1.2rem; }
+        .tile-title {
+            font-size: 1rem; font-weight: 700; color: #1e3a5f;
+            margin-bottom: 0.35rem; line-height: 1.35;
         }
-        
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        .tile-meta { font-size: 0.75rem; color: #999; margin-bottom: 0.6rem; }
+        .tile-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.7rem; }
+        .tile-tag {
+            background: #eef4fb; color: #2c5282;
+            padding: 0.2rem 0.6rem; border-radius: 10px;
+            font-size: 0.72rem; font-weight: 500;
         }
-        
-        .project-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #2c5282 0%, #1e3a5f 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            padding: 1rem;
-            text-align: center;
+        .tile-excerpt {
+            font-size: 0.82rem; color: #555;
+            line-height: 1.5; margin-bottom: 0.8rem;
+            display: -webkit-box; -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; overflow: hidden;
         }
-
-        .project-image.rl { background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%); }
-        .project-image.vision { background: linear-gradient(135deg, #44267a 0%, #6b3fa0 100%); }
-        .project-image.nav { background: linear-gradient(135deg, #7a3400 0%, #b35c00 100%); }
-        .project-image.soft { background: linear-gradient(135deg, #003566 0%, #1565c0 100%); }
-        .project-image.safety { background: linear-gradient(135deg, #5c0a00 0%, #9b1c1c 100%); }
-        
-        .project-content {
-            padding: 1.5rem;
+        .tile-cta {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            font-size: 0.8rem; font-weight: 600; color: #2c5282;
+            border: 1.5px solid #2c5282; border-radius: 20px;
+            padding: 0.3rem 0.9rem; transition: all 0.2s;
         }
-        
-        .project-title {
-            font-size: 1.3rem;
-            color: #1e3a5f;
-            margin-bottom: 0.4rem;
-            font-weight: 700;
+        .project-tile:hover .tile-cta {
+            background: #2c5282; color: white;
         }
 
-        .project-meta {
-            font-size: 0.82rem;
-            color: #888;
-            margin-bottom: 0.75rem;
-        }
-        
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 0.75rem 0;
-        }
-        
-        .tag {
-            background: #e8f4f8;
-            color: #2c5282;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.82rem;
-            font-weight: 500;
-        }
+        /* ── PROJECT DETAIL PAGE ── */
+        #detailView { display: none; }
+        #detailView.active { display: block; }
+        #mainView.hidden { display: none; }
 
-        .achievement-badge {
+        .detail-back-bar {
+            background: white;
+            border-bottom: 1px solid #e8edf2;
+            padding: 0.85rem 2rem;
+            position: sticky; top: 64px; z-index: 900;
+        }
+        .detail-back-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            color: #2c5282; font-weight: 600; font-size: 0.9rem;
+            cursor: pointer; background: none; border: none;
+            transition: gap 0.2s;
+        }
+        .detail-back-btn:hover { gap: 0.75rem; color: #1e3a5f; }
+
+        .detail-hero {
+            height: 220px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4rem;
+        }
+        .detail-hero.rl      { background: linear-gradient(135deg,#1a472a,#2d6a4f); }
+        .detail-hero.vision  { background: linear-gradient(135deg,#44267a,#6b3fa0); }
+        .detail-hero.nav     { background: linear-gradient(135deg,#7a3400,#b35c00); }
+        .detail-hero.soft    { background: linear-gradient(135deg,#003566,#1565c0); }
+        .detail-hero.safety  { background: linear-gradient(135deg,#5c0a00,#9b1c1c); }
+        .detail-hero.default { background: linear-gradient(135deg,#2c5282,#1e3a5f); }
+
+        .detail-container {
+            max-width: 860px; margin: 0 auto; padding: 2.5rem 2rem 4rem;
+        }
+        .detail-title {
+            font-size: 1.9rem; font-weight: 800; color: #1e3a5f;
+            margin-bottom: 0.4rem; line-height: 1.25;
+        }
+        .detail-meta { font-size: 0.85rem; color: #888; margin-bottom: 1.2rem; }
+        .detail-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+        .detail-tag {
+            background: #eef4fb; color: #2c5282;
+            padding: 0.3rem 0.8rem; border-radius: 12px;
+            font-size: 0.82rem; font-weight: 500;
+        }
+        .detail-section-title {
+            font-size: 1rem; font-weight: 700; color: #2c5282;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin: 1.8rem 0 0.7rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #eef4fb;
+        }
+        .detail-body p {
+            font-size: 1rem; color: #444; line-height: 1.8; margin-bottom: 0.9rem;
+        }
+        .detail-bullets { list-style: none; margin-bottom: 1rem; }
+        .detail-bullets li {
+            padding: 0.45rem 0 0.45rem 1.5rem;
+            position: relative; font-size: 0.96rem; color: #444; line-height: 1.65;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        .detail-bullets li:last-child { border-bottom: none; }
+        .detail-bullets li::before {
+            content: '▸'; position: absolute; left: 0;
+            color: #ffd700; font-size: 0.9rem; top: 0.5rem;
+        }
+        .detail-achievement {
             display: inline-block;
-            background: #fff8e1;
-            border: 1px solid #ffd700;
-            color: #b45309;
-            border-radius: 6px;
-            padding: 0.35rem 0.75rem;
-            font-size: 0.82rem;
-            font-weight: 600;
-            margin-top: 0.75rem;
+            background: #fff8e1; border: 1px solid #ffd700;
+            color: #b45309; border-radius: 8px;
+            padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600;
+            margin-top: 1rem;
         }
-        
-        /* Skills Section */
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        
+
+        /* ── Skills ── */
+        .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 2rem; }
         .skill-category {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
+            background: white; padding: 2rem; border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
-        
         .skill-category h3 {
-            color: #2c5282;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            color: #2c5282; font-size: 1.3rem; margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.5rem;
         }
-        
-        .skill-list {
-            list-style: none;
-        }
-        
-        .skill-list li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        .skill-list li:last-child {
-            border-bottom: none;
-        }
-        
-        /* Publications */
+        .skill-list { list-style: none; }
+        .skill-list li { padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0; }
+        .skill-list li:last-child { border-bottom: none; }
+
+        /* ── Publications ── */
         .publication {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
+            background: white; padding: 2rem; border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            margin-bottom: 1.5rem;
-            border-left: 4px solid #ffd700;
+            margin-bottom: 1.5rem; border-left: 4px solid #ffd700;
         }
-        
-        .publication-title {
-            font-size: 1.2rem;
-            color: #1e3a5f;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        
-        .publication-authors {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Contact Section */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-        
+        .publication-title { font-size: 1.2rem; color: #1e3a5f; font-weight: bold; margin-bottom: 0.5rem; }
+        .publication-authors { color: #666; font-style: italic; margin-bottom: 0.5rem; }
+
+        /* ── Contact ── */
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 2rem; text-align: center; }
         .contact-item {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            background: white; padding: 2rem; border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s;
         }
-        
-        .contact-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .contact-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background: #1e3a5f;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-        
+        .contact-item:hover { transform: translateY(-5px); }
+        .contact-icon { font-size: 2rem; margin-bottom: 1rem; }
+
+        footer { background: #1e3a5f; color: white; text-align: center; padding: 2rem; }
+
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-20px); }
             to   { opacity: 1; transform: translateY(0); }
         }
-        
+
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .hero .tagline { font-size: 1.2rem; }
@@ -442,67 +298,69 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#journey">Journey</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
+<nav>
+    <ul>
+        <li><a href="#" onclick="showMain();return false;">About</a></li>
+        <li><a href="#journey" onclick="showMain('journey');return false;">Journey</a></li>
+        <li><a href="#projects" onclick="showMain('projects');return false;">Projects</a></li>
+        <li><a href="#skills" onclick="showMain('skills');return false;">Skills</a></li>
+        <li><a href="#publications" onclick="showMain('publications');return false;">Publications</a></li>
+        <li><a href="#contact" onclick="showMain('contact');return false;">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════ MAIN VIEW ═══ -->
+<div id="mainView">
 
     <div class="hero">
-        <div style="display:flex; align-items:center; justify-content:center; gap:2rem; flex-wrap:wrap; margin-bottom:1.5rem;">
-            <img src="data:image/jpeg;base64,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" alt="Ahilesh Vadivel"
-                 style="width:130px; height:130px; border-radius:50%; object-fit:cover; object-position:center top;
-                        border:4px solid #ffd700; box-shadow:0 4px 20px rgba(0,0,0,0.35);">
+        <div style="display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <img id="heroPhoto" src="" alt="Ahilesh Vadivel"
+                 style="width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:center top;
+                        border:4px solid #ffd700;box-shadow:0 4px 20px rgba(0,0,0,0.35);">
             <div style="text-align:left;">
                 <h1 style="margin-bottom:0.25rem;">Ahilesh Vadivel</h1>
                 <div class="tagline" style="margin-bottom:0;">Robotics Engineer | Dynamic Locomotion Specialist</div>
             </div>
         </div>
         <div class="subtitle">
-            Bridging classical control theory with modern learning-based approaches to enable intelligent, dynamic movement in autonomous systems. 
+            Bridging classical control theory with modern learning-based approaches to enable intelligent, dynamic movement in autonomous systems.
             Passionate about humanoids, quadrupeds, and the future of mobile manipulation.
         </div>
         <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#projects" onclick="showMain('projects');return false;" class="btn btn-primary">View Projects</a>
             <a href="YOUR_RESUME_LINK.pdf" class="btn btn-secondary" download>Download Resume</a>
         </div>
     </div>
 
     <div class="container">
+
         <section id="about">
             <h2>About Me</h2>
-            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                <div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap; margin-bottom:1.5rem;">
-                    <div style="flex-shrink:0; text-align:center;">
-                        <img src="data:image/jpeg;base64,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" alt="Ahilesh Vadivel"
-                             style="width:200px; height:240px; object-fit:cover; object-position:center top;
-                                    border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.18);
-                                    border:3px solid #e8f4f8;">
-                        <div style="margin-top:0.75rem; font-size:0.85rem; color:#666; font-weight:500;">M.S. Robotics, Northeastern<br>GPA: 4.0 / 4.0</div>
+            <div style="background:white;padding:2rem;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+                <div style="display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:1.5rem;">
+                    <div style="flex-shrink:0;text-align:center;">
+                        <img id="aboutPhoto" src="" alt="Ahilesh Vadivel"
+                             style="width:200px;height:240px;object-fit:cover;object-position:center top;
+                                    border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.18);border:3px solid #e8f4f8;">
+                        <div style="margin-top:0.75rem;font-size:0.85rem;color:#666;font-weight:500;">M.S. Robotics, Northeastern<br>GPA: 4.0 / 4.0</div>
                     </div>
-                    <div style="flex:1; min-width:260px;">
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
-                    I'm a robotics engineer completing my Master's in Robotics (ECE concentration) at Northeastern University, graduating April 2026 with a 4.0 GPA.
-                    My journey began with a childhood fascination for how machines move, evolved through strategic foundation-building in Electronics & Communication Engineering at Anna University,
-                    and has culminated in specialized expertise in dynamic locomotion, learning-based control, and autonomous systems.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
-                    What drives me is the challenge of making robots move intelligently through complex environments — whether it's a quadruped learning locomotion through reinforcement learning,
-                    a multi-robot team collaboratively mapping an unknown space, or a neural network controller whose safety can be formally verified. I'm particularly excited about the intersection of 
-                    classical control theory and deep learning, where mathematical rigor meets adaptive intelligence.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    <strong>Currently seeking:</strong> Full-time opportunities in dynamic locomotion, legged robotics, autonomous navigation, and mobile manipulation,
-                    starting May 2026. Open to roles across the robotics stack — from controls and planning to perception and integration.
-                    Available on F-1 OPT.
-                </p>
-                    </div><!-- end flex text col -->
-                </div><!-- end flex row -->
+                    <div style="flex:1;min-width:260px;">
+                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">
+                            I'm a robotics engineer completing my Master's in Robotics (ECE concentration) at Northeastern University, graduating April 2026 with a 4.0 GPA.
+                            My journey began with a childhood fascination for how machines move, evolved through strategic foundation-building in Electronics & Communication Engineering at Anna University,
+                            and has culminated in specialized expertise in dynamic locomotion, learning-based control, and autonomous systems.
+                        </p>
+                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">
+                            What drives me is the challenge of making robots move intelligently through complex environments — whether it's a quadruped learning locomotion through reinforcement learning,
+                            a multi-robot team collaboratively mapping an unknown space, or a neural network controller whose safety can be formally verified.
+                        </p>
+                        <p style="font-size:1.1rem;line-height:1.8;">
+                            <strong>Currently seeking:</strong> Full-time opportunities in dynamic locomotion, legged robotics, autonomous navigation, and mobile manipulation,
+                            starting May 2026. Available on F-1 OPT.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -514,8 +372,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2018</div>
                         <h3>The Beginning: Gesture-Controlled Robot</h3>
-                        <p>Built my first gesture-controlled robot in high school, sparking a lifelong passion for human-robot interaction and intelligent movement. 
-                        This early project taught me the fundamentals of sensor integration and real-time control.</p>
+                        <p>Built my first gesture-controlled robot in high school, sparking a lifelong passion for human-robot interaction and intelligent movement.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -523,9 +380,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2020–2024</div>
                         <h3>Foundation Building: B.E. in Electronics & Communication</h3>
-                        <p>Strategic decision to master electronics fundamentals at Anna University's College of Engineering Guindy.
-                        Completed projects ranging from agricultural monitoring rovers to continuum robots, each building toward robotics applications.
-                        Developed strong embedded systems expertise and hardware-software integration skills.</p>
+                        <p>Strategic decision to master electronics fundamentals at Anna University's College of Engineering Guindy. Completed projects ranging from agricultural monitoring rovers to continuum robots.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -533,9 +388,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">Summer 2022</div>
                         <h3>Research Discovery: CSIR Internship</h3>
-                        <p>Research internship at CSIR Central Scientific Instruments Organisation developing portable vaccine storage systems.
-                        Identified and resolved temperature measurement instability, designed custom sensor PCBs, and documented sensor upgrade methodology — 
-                        solidifying my interest in systematic engineering problem-solving and graduate research.</p>
+                        <p>Research internship at CSIR Central Scientific Instruments Organisation developing portable vaccine storage systems — solidifying my interest in systematic engineering and graduate research.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -543,8 +396,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2023–2024</div>
                         <h3>Integration Mastery: Vision-Based CNC Capstone</h3>
-                        <p>Led computer vision development for an ML-enabled CNC pick-and-place system. Trained CNNs achieving 99% picking accuracy, integrated Raspberry Pi coordination with G-code generation,
-                        and published results as bachelor's thesis — a complete demonstration of perception-action integration.</p>
+                        <p>Led computer vision development for an ML-enabled CNC pick-and-place system achieving 99% picking accuracy. Published as bachelor's thesis.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -552,9 +404,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">2024–Present</div>
                         <h3>Specialization: M.S. in Robotics at Northeastern (4.0 GPA)</h3>
-                        <p>Systematic exploration through graduate coursework: Robot Sensing & Navigation, Mobile Robotics, Robot Mechanics & Controls,
-                        Legged Robotics, Reinforcement Learning, Verifiable ML, and more. Tackled 12+ hands-on projects spanning RL-based quadruped locomotion,
-                        deep learning perception, SLAM, formal verification, and soft robotics.</p>
+                        <p>Systematic exploration through graduate coursework tackling 12+ hands-on projects spanning RL-based quadruped locomotion, deep learning perception, SLAM, formal verification, and soft robotics.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -562,9 +412,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">Jan 2025–Dec 2025</div>
                         <h3>Research Experience: PARSES Lab Graduate RA</h3>
-                        <p>Contributed to the fabrication, systems integration, and closed-loop control validation of a 4-DoF soft origami robot arm published in <em>Soft Robotics</em> journal.
-                        Independently pioneered a novel in-hand manipulation application for Kresling grippers, achieving 85% success rate across 20+ trials. 
-                        Clarified my preference for rigid-body dynamic systems and learning-based locomotion.</p>
+                        <p>Contributed to a 4-DoF soft origami robot arm published in <em>Soft Robotics</em> journal. Independently pioneered in-hand manipulation with Kresling grippers at 85% success rate.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -572,20 +420,17 @@
                     <div class="timeline-content">
                         <div class="timeline-date">April 2026</div>
                         <h3>Next Chapter: Full-Time Robotics Engineer</h3>
-                        <p>Graduating with specialized expertise in dynamic locomotion, learning-based control, navigation, and perception.
-                        Seeking opportunities to contribute to the next generation of legged robots and autonomous systems.
-                        Ready to tackle challenges in humanoid robotics, quadruped locomotion, or mobile manipulation.</p>
+                        <p>Graduating with specialized expertise in dynamic locomotion, learning-based control, navigation, and perception. Ready to tackle challenges in humanoid robotics, quadruped locomotion, or mobile manipulation.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- ── PROJECTS ── -->
         <section id="projects">
             <h2>Featured Projects</h2>
-
             <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="all">All Projects</button>
+                <button class="filter-tab active" data-filter="all">All</button>
                 <button class="filter-tab" data-filter="locomotion">Locomotion & Control</button>
                 <button class="filter-tab" data-filter="perception">Perception & Vision</button>
                 <button class="filter-tab" data-filter="navigation">Navigation & SLAM</button>
@@ -594,480 +439,443 @@
             </div>
 
             <div class="projects-grid" id="projectsGrid">
-
-                <!-- RL Quadruped -->
-                <div class="project-card" data-category="locomotion">
-                    <div class="project-image rl">RL Quadruped Locomotion</div>
-                    <div class="project-content">
-                        <div class="project-title">Reinforcement Learning for Quadruped Locomotion</div>
-                        <div class="project-meta">Northeastern University · Feb 2026 – Apr 2026</div>
-                        <div class="project-tags">
-                            <span class="tag">PPO</span>
-                            <span class="tag">MuJoCo</span>
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Gymnasium</span>
-                            <span class="tag">Legged Robotics</span>
-                        </div>
-                        <p>Developed a PPO-based RL policy for quadruped (Ant) locomotion in MuJoCo, processing 105-dimensional proprioceptive observations 
-                        (joint angles, velocities, contact forces) to generate 8 continuous torque commands. Implemented the complete training pipeline from scratch 
-                        using PyTorch and Gymnasium (Ant-v5). Currently extending with vision-based terrain perception for adaptive locomotion across varying surfaces.</p>
-                        <div class="achievement-badge">🏆 Baseline reward of 1,873 on flat terrain via systematic reward shaping</div>
-                    </div>
-                </div>
-
-                <!-- CNN / Deep Learning Recognition -->
-                <div class="project-card" data-category="perception">
-                    <div class="project-image vision">Recognition Using Deep Neural Networks</div>
-                    <div class="project-content">
-                        <div class="project-title">Multi-Architecture Deep Learning Recognition</div>
-                        <div class="project-meta">Northeastern University · Mar 2026 – Apr 2026</div>
-                        <div class="project-tags">
-                            <span class="tag">CNN</span>
-                            <span class="tag">Vision Transformer</span>
-                            <span class="tag">Transfer Learning</span>
-                            <span class="tag">Gabor Filters</span>
-                            <span class="tag">PyTorch</span>
-                        </div>
-                        <p>Built and compared multiple recognition architectures: custom CNN (98.1% MNIST accuracy), Vision Transformer with patch embedding and 
-                        multi-head self-attention, and transfer learning for few-shot classification (89% accuracy on Greek letters from only 27 training examples). 
-                        Extended CNN with a Gabor filter bank replacing the first convolutional layer, achieving 98.9% accuracy and 3% faster convergence — 
-                        demonstrating the complementary value of hand-crafted and learned features.</p>
-                        <div class="achievement-badge">🏆 98.9% accuracy with Gabor+CNN hybrid · 89% few-shot transfer (27 samples)</div>
-                    </div>
-                </div>
-
-                <!-- Camera Calibration & AR -->
-                <div class="project-card" data-category="perception">
-                    <div class="project-image vision">Camera Calibration & AR</div>
-                    <div class="project-content">
-                        <div class="project-title">Camera Calibration and Augmented Reality System</div>
-                        <div class="project-meta">Northeastern University · Feb 2026 – Mar 2026</div>
-                        <div class="project-tags">
-                            <span class="tag">Zhang's Method</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">solvePnP</span>
-                            <span class="tag">Harris Detector</span>
-                            <span class="tag">6-DOF Pose</span>
-                        </div>
-                        <p>Built a complete camera calibration and AR pipeline from scratch using Zhang's method — detecting and refining 54 chessboard corners to sub-pixel 
-                        accuracy across 10–15 frames. Computed intrinsic matrix and distortion coefficients via <code>calibrateCamera</code>, then implemented real-time 6-DOF 
-                        pose estimation with <code>solvePnP</code> to overlay a 3D virtual object (rocket ship) that correctly tracks camera motion through live video. 
-                        Also developed a Harris corner detector for feature-based target-free AR.</p>
-                        <div class="achievement-badge">🏆 1.28-pixel RMS reprojection error · Real-time 6-DOF AR overlay</div>
-                    </div>
-                </div>
-
-                <!-- Real-Time 2D Object Recognition -->
-                <div class="project-card" data-category="perception">
-                    <div class="project-image vision">Real-Time 2D Object Recognition</div>
-                    <div class="project-content">
-                        <div class="project-title">Real-Time 2D Object Recognition System</div>
-                        <div class="project-meta">Northeastern University · Feb 2026 – Mar 2026</div>
-                        <div class="project-tags">
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">ISODATA Thresholding</span>
-                            <span class="tag">K-NN</span>
-                            <span class="tag">ResNet18</span>
-                            <span class="tag">Geometric Features</span>
-                        </div>
-                        <p>Built a real-time object recognition pipeline at 30 FPS from a live mobile camera feed. Implemented dynamic ISODATA thresholding in HSV color space, 
-                        morphological cleaning, connected components analysis, and five translation/scale/rotation-invariant geometric features (axis of least central moment, 
-                        oriented bounding box, percent filled, eccentricity, Hu moments) with K-NN classification. Also implemented one-shot classification using pretrained 
-                        ResNet18 embeddings, analytically comparing deep vs. hand-crafted approaches.</p>
-                        <div class="achievement-badge">🏆 100% classification accuracy across 5 object classes (15 test samples)</div>
-                    </div>
-                </div>
-
-                <!-- Content-Based Image Retrieval -->
-                <div class="project-card" data-category="perception">
-                    <div class="project-image vision">Content-Based Image Retrieval</div>
-                    <div class="project-content">
-                        <div class="project-title">Content-Based Image Retrieval System</div>
-                        <div class="project-meta">Northeastern University · Jan 2026 – Feb 2026</div>
-                        <div class="project-tags">
-                            <span class="tag">ResNet18</span>
-                            <span class="tag">Histogram Intersection</span>
-                            <span class="tag">Feature Fusion</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">Python</span>
-                        </div>
-                        <p>Built a comprehensive image retrieval system implementing six matching methods — from pixel-level comparison to deep learning embeddings — querying a 1,107-image 
-                        Olympus database. Implemented RGB color histograms, multi-region spatial histograms, gradient texture features, and ResNet18 embeddings with cosine distance. 
-                        Designed a custom hybrid car retrieval system combining ResNet18 embeddings (35%) with domain-specific features (wheel circle detection, aspect ratio, metallic 
-                        surface detection, horizontal line density), outperforming either approach alone.</p>
-                        <div class="achievement-badge">🏆 Hybrid feature fusion outperforms pure deep learning or classical approaches</div>
-                    </div>
-                </div>
-
-                <!-- Multi-Robot Coordination -->
-                <div class="project-card" data-category="navigation">
-                    <div class="project-image nav">Multi-Robot SLAM Coordination</div>
-                    <div class="project-content">
-                        <div class="project-title">Synchronization of Two Mobile Robots</div>
-                        <div class="project-meta">Northeastern University · Oct 2024 – Dec 2024</div>
-                        <div class="project-tags">
-                            <span class="tag">ROS</span>
-                            <span class="tag">SLAM</span>
-                            <span class="tag">AMCL</span>
-                            <span class="tag">Gazebo</span>
-                            <span class="tag">Multi-Agent</span>
-                        </div>
-                        <p>Implemented autonomous navigation for two TurtleBot3 robots in Gazebo, configuring slam_gmapping with AMCL localization and move_base for goal-based path planning. 
-                        Designed multi-robot architecture managing namespace hierarchy and TF frame isolation to prevent conflicts between independently operating robots. 
-                        Developed a map merging pipeline using <code>multirobot_map_merge</code> to create unified spatial representations from separate SLAM-generated maps, with real-time 
-                        RViz monitoring of dual-robot sensor data and localization estimates.</p>
-                        <div class="achievement-badge">🏆 Successful multi-robot SLAM with unified map merging</div>
-                    </div>
-                </div>
-
-                <!-- Mobile Robot Localization / FSSM -->
-                <div class="project-card" data-category="navigation">
-                    <div class="project-image nav">Mobile Robot Localization</div>
-                    <div class="project-content">
-                        <div class="project-title">Mobile Robot Localization via Place Learning (FSSM)</div>
-                        <div class="project-meta">Northeastern University · Mar 2025 – Apr 2025</div>
-                        <div class="project-tags">
-                            <span class="tag">Scan Matching</span>
-                            <span class="tag">SVM</span>
-                            <span class="tag">RANSAC</span>
-                            <span class="tag">Particle Filter</span>
-                            <span class="tag">Localization</span>
-                        </div>
-                        <p>Re-implemented the Fast Spectral Scan Matching (FSSM) algorithm from a research paper, achieving a 106× memory reduction and 156× speed improvement over 
-                        traditional Spectral Scan Matching through matrix approximation with Kronecker products and bistochastic normalization. Developed scan matching for 2D range scans 
-                        in the NEU Racing simulation environment and integrated an SVM classifier for place recognition, combined with RANSAC pose estimation and a unicycle motion model.</p>
-                        <div class="achievement-badge">🏆 106× memory reduction · 156× speed improvement over traditional SSM</div>
-                    </div>
-                </div>
-
-                <!-- Soft Robotics / Origami Gripper -->
-                <div class="project-card" data-category="manipulation">
-                    <div class="project-image soft">Origami Gripper Manipulation</div>
-                    <div class="project-content">
-                        <div class="project-title">In-Hand Manipulation with Kresling Origami Grippers</div>
-                        <div class="project-meta">PARSES Lab, Northeastern University · Jan 2025 – Dec 2025</div>
-                        <div class="project-tags">
-                            <span class="tag">Soft Robotics</span>
-                            <span class="tag">ROS2</span>
-                            <span class="tag">UR3 Arm</span>
-                            <span class="tag">Arduino DUE</span>
-                            <span class="tag">Pneumatic Control</span>
-                        </div>
-                        <p>Independently pioneered a novel research application of Kresling origami soft grippers to in-hand manipulation — an unexplored area in compliant robotics. 
-                        Designed and iterated 3-finger and 4-finger gripper configurations via 3D printing and UR3 arm integration. Developed Arduino DUE teleoperation control and 
-                        implemented a screwing-based manipulation algorithm using alternating positive/negative pressure actuation. Validated through 20+ experimental trials.</p>
-                        <div class="achievement-badge">🏆 85% success rate on geometric & irregular objects · Novel research application</div>
-                    </div>
-                </div>
-
-                <!-- FBRA Neural Network Verification -->
-                <div class="project-card" data-category="safety">
-                    <div class="project-image safety">Neural Network Verification</div>
-                    <div class="project-content">
-                        <div class="project-title">Forward-Backward Reachability Analysis (FBRA)</div>
-                        <div class="project-meta">Northeastern University · Nov 2025 – Dec 2025</div>
-                        <div class="project-tags">
-                            <span class="tag">Formal Verification</span>
-                            <span class="tag">Interval Bound Propagation</span>
-                            <span class="tag">Linear Programming</span>
-                            <span class="tag">Safety-Critical</span>
-                            <span class="tag">Python</span>
-                        </div>
-                        <p>Re-implemented the FBRA algorithm from a research paper to verify safety of neural network controllers for autonomous systems. Built a complete Python 
-                        verification pipeline using interval bound propagation and LP-based backward reachability, tested on ground robot navigation and double integrator benchmark systems. 
-                        Demonstrated FBRA's ability to detect unsafe behaviors in biased controllers while confirming safety in stable systems — where forward-only approaches yield inconclusive results.</p>
-                        <div class="achievement-badge">🏆 100% conclusive safety verification across 5 controller configs · All under 1 second</div>
-                    </div>
-                </div>
-
-                <!-- FGSM Adversarial Attack -->
-                <div class="project-card" data-category="safety">
-                    <div class="project-image safety">Adversarial Attack Simulation</div>
-                    <div class="project-content">
-                        <div class="project-title">Adversarial Attack Simulation (FGSM)</div>
-                        <div class="project-meta">Northeastern University</div>
-                        <div class="project-tags">
-                            <span class="tag">FGSM</span>
-                            <span class="tag">ML Security</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">MNIST</span>
-                            <span class="tag">Robustness</span>
-                        </div>
-                        <p>Trained an MNIST classifier and systematically attacked it using constant offsets, noise injection, FGSM, and targeted FGSM to explore neural network vulnerabilities. 
-                        Analyzed safety implications for robotic perception systems — a critical consideration for verifiable ML in safety-critical applications like autonomous navigation and manipulation.</p>
-                        <div class="achievement-badge">🏆 Demonstrated NN vulnerabilities for safety analysis in robotic systems</div>
-                    </div>
-                </div>
-
-                <!-- Vision-Based CNC -->
-                <div class="project-card" data-category="manipulation">
-                    <div class="project-image">Vision-Based CNC with ML</div>
-                    <div class="project-content">
-                        <div class="project-title">Vision-Based CNC Pick-and-Place with ML</div>
-                        <div class="project-meta">Anna University · Nov 2023 – Feb 2024 · Bachelor's Thesis</div>
-                        <div class="project-tags">
-                            <span class="tag">CNN</span>
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">G-code</span>
-                            <span class="tag">Raspberry Pi</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                        <p>Led computer vision development for an ML-enabled CNC pick-and-place system, implementing contour detection, Canny edge detection, and template matching. 
-                        Trained and integrated a CNN for real-time object classification achieving 99% picking accuracy across three distinct coin types with scalability to 10+ object classes. 
-                        Programmed Raspberry Pi to coordinate vision processing with G-code generation. Demonstrated applications including automated game piece manipulation and QR code-based 
-                        blood sample identification. Published as undergraduate thesis.</p>
-                        <div class="achievement-badge">🏆 99% picking accuracy · Published undergraduate thesis</div>
-                    </div>
-                </div>
-
-                <!-- Continuum Robot -->
-                <div class="project-card" data-category="manipulation">
-                    <div class="project-image soft">Tendon-Driven Continuum Robot</div>
-                    <div class="project-content">
-                        <div class="project-title">Tendon-Driven Continuum Robot</div>
-                        <div class="project-meta">Anna University · Oct 2023 – Dec 2023</div>
-                        <div class="project-tags">
-                            <span class="tag">Continuum Robotics</span>
-                            <span class="tag">Arduino</span>
-                            <span class="tag">PCB Design</span>
-                            <span class="tag">Servo Control</span>
-                            <span class="tag">Kinematics</span>
-                        </div>
-                        <p>Designed and fabricated a continuum robot with infinite degrees of freedom using tendon-based actuation. Developed Arduino UNO control algorithms achieving 
-                        8 distinct end-effector positions through coordinated tendon actuation, and designed a custom PCB shield for Arduino UNO integrating multiple servo motor drivers — 
-                        solving the primary challenge of synchronized tendon coordination for constrained-space manipulation.</p>
-                        <div class="achievement-badge">🏆 8 distinct end-effector positions with custom PCB integration</div>
-                    </div>
-                </div>
-
-                <!-- Agricultural Rover -->
-                <div class="project-card" data-category="navigation">
-                    <div class="project-image nav">Agricultural Monitoring Rover</div>
-                    <div class="project-content">
-                        <div class="project-title">Autonomous Agricultural Monitoring Rover</div>
-                        <div class="project-meta">Anna University · Dec 2021 – Mar 2022</div>
-                        <div class="project-tags">
-                            <span class="tag">Autonomous Nav</span>
-                            <span class="tag">Sensor Fusion</span>
-                            <span class="tag">Fusion 360</span>
-                            <span class="tag">Raspberry Pi</span>
-                            <span class="tag">IoT</span>
-                        </div>
-                        <p>Designed a novel arch-shaped chassis concept for non-disruptive crop-row navigation — modeled in Fusion 360 and fabricated via 3D printing and metal components. 
-                        Integrated Raspberry Pi with L298N motor driver for teleoperated control and implemented sensor fusion combining soil moisture and humidity sensors with IoT connectivity 
-                        for remote monitoring. Presented at university ideathon and recognized for innovative mechanical design.</p>
-                        <div class="achievement-badge">🏆 Ideathon recognition for novel arch-chassis mechanical design</div>
-                    </div>
-                </div>
-
+                <!-- tiles injected by JS -->
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- ── SKILLS ── -->
         <section id="skills">
             <h2>Technical Skills</h2>
             <div class="skills-container">
-                <div class="skill-category">
-                    <h3>🤖 Robotics Frameworks</h3>
-                    <ul class="skill-list">
-                        <li>ROS / ROS2</li>
-                        <li>Gazebo Simulation</li>
-                        <li>MuJoCo (Gymnasium/Ant)</li>
-                        <li>Coppelia Sim (V-REP)</li>
-                        <li>MoveIt!</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>💻 Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li>Python (Advanced)</li>
-                        <li>C++ (Advanced)</li>
-                        <li>MATLAB</li>
-                        <li>G-code</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🧠 ML / AI Frameworks</h3>
-                    <ul class="skill-list">
-                        <li>PyTorch (RL, CNN, ViT)</li>
-                        <li>TensorFlow / Keras</li>
-                        <li>NumPy / Pandas / scikit-learn</li>
-                        <li>OpenCV</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>⚙️ Hardware & Embedded</h3>
-                    <ul class="skill-list">
-                        <li>Arduino / Arduino DUE</li>
-                        <li>Raspberry Pi</li>
-                        <li>PIC Microcontrollers</li>
-                        <li>PCB Design (EasyEDA)</li>
-                        <li>Sensor Integration & Fusion</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🎯 Core Competencies</h3>
-                    <ul class="skill-list">
-                        <li>SLAM & Localization</li>
-                        <li>Motion Planning</li>
-                        <li>Control Systems (Classical & Modern)</li>
-                        <li>Reinforcement Learning (PPO, MuJoCo)</li>
-                        <li>Computer Vision & Deep Learning</li>
-                        <li>Formal Verification (FBRA)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🔧 CAD & Design</h3>
-                    <ul class="skill-list">
-                        <li>Fusion 360</li>
-                        <li>SolidWorks</li>
-                        <li>3D Printing & Prototyping</li>
-                        <li>LT Spice</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>📚 Specialized Coursework</h3>
-                    <ul class="skill-list">
-                        <li>Robot Sensing & Navigation</li>
-                        <li>Mobile Robotics</li>
-                        <li>Legged Robotics</li>
-                        <li>Robot Mechanics & Controls</li>
-                        <li>Robotic Science & Systems</li>
-                        <li>Reinforcement Learning</li>
-                        <li>Verifiable ML</li>
-                        <li>Pattern Recognition & CV</li>
-                        <li>Flexible Soft Robotics</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🎓 Research Interests</h3>
-                    <ul class="skill-list">
-                        <li>Dynamic Locomotion</li>
-                        <li>Humanoid Robotics</li>
-                        <li>Quadruped Control</li>
-                        <li>Learning-Based Control</li>
-                        <li>Mobile Manipulation</li>
-                        <li>Perception for Autonomous Systems</li>
-                    </ul>
-                </div>
+                <div class="skill-category"><h3>🤖 Robotics Frameworks</h3><ul class="skill-list"><li>ROS / ROS2</li><li>Gazebo Simulation</li><li>MuJoCo (Gymnasium/Ant)</li><li>Coppelia Sim (V-REP)</li><li>MoveIt!</li></ul></div>
+                <div class="skill-category"><h3>💻 Programming Languages</h3><ul class="skill-list"><li>Python (Advanced)</li><li>C++ (Advanced)</li><li>MATLAB</li><li>G-code</li></ul></div>
+                <div class="skill-category"><h3>🧠 ML / AI Frameworks</h3><ul class="skill-list"><li>PyTorch (RL, CNN, ViT)</li><li>TensorFlow / Keras</li><li>NumPy / Pandas / scikit-learn</li><li>OpenCV</li></ul></div>
+                <div class="skill-category"><h3>⚙️ Hardware & Embedded</h3><ul class="skill-list"><li>Arduino / Arduino DUE</li><li>Raspberry Pi</li><li>PIC Microcontrollers</li><li>PCB Design (EasyEDA)</li><li>Sensor Integration & Fusion</li></ul></div>
+                <div class="skill-category"><h3>🎯 Core Competencies</h3><ul class="skill-list"><li>SLAM & Localization</li><li>Motion Planning</li><li>Control Systems (Classical & Modern)</li><li>Reinforcement Learning (PPO, MuJoCo)</li><li>Computer Vision & Deep Learning</li><li>Formal Verification (FBRA)</li></ul></div>
+                <div class="skill-category"><h3>🔧 CAD & Design</h3><ul class="skill-list"><li>Fusion 360</li><li>SolidWorks</li><li>3D Printing & Prototyping</li><li>LT Spice</li></ul></div>
+                <div class="skill-category"><h3>📚 Specialized Coursework</h3><ul class="skill-list"><li>Robot Sensing & Navigation</li><li>Mobile Robotics</li><li>Legged Robotics</li><li>Robot Mechanics & Controls</li><li>Robotic Science & Systems</li><li>Reinforcement Learning</li><li>Verifiable ML</li><li>Pattern Recognition & CV</li><li>Flexible Soft Robotics</li></ul></div>
+                <div class="skill-category"><h3>🎓 Research Interests</h3><ul class="skill-list"><li>Dynamic Locomotion</li><li>Humanoid Robotics</li><li>Quadruped Control</li><li>Learning-Based Control</li><li>Mobile Manipulation</li><li>Perception for Autonomous Systems</li></ul></div>
             </div>
         </section>
 
-        <!-- Publications Section -->
+        <!-- ── PUBLICATIONS ── -->
         <section id="publications">
             <h2>Publications & Research</h2>
             <div class="publication">
                 <div class="publication-title">A 3D-Printed, 4-Degree of Freedom Soft Origami Robot Arm</div>
-                <div class="publication-authors">
-                    Immanuel Ampomah Mensah, Owen Lewis, Joseph Allen, <strong>Ahilesh Vadivel</strong>,
-                    Celina Wu, Andrea Lacunza, Nathaniel Hanson, and Kristen L. Dorsey
-                </div>
+                <div class="publication-authors">Immanuel Ampomah Mensah, Owen Lewis, Joseph Allen, <strong>Ahilesh Vadivel</strong>, Celina Wu, Andrea Lacunza, Nathaniel Hanson, and Kristen L. Dorsey</div>
                 <p><strong>Published:</strong> Soft Robotics (Journal) — 2025</p>
-                <p style="margin-top: 0.5rem;"><strong>My Contribution:</strong> Fabricated 14 Kresling origami actuators through a complete manufacturing pipeline (3D printing, oven annealing, capacitive sensor integration, pneumatic sealing, leak testing). 
-                Built support frame infrastructure and developed ROS2 launch sequencing for multi-node operation. Co-developed PID controller for vacuum pressure regulation and led experimental validation through 10+ test protocols, 
-                contributing to published results of &lt;5mm position error in 2D, &lt;10mm in 3D, and 680g payload capacity.</p>
-                <p style="margin-top: 0.5rem; color: #2c5282;"><strong>Impact:</strong> Demonstrated novel joint arrangements from Kresling origami structures for soft robotic arms capable of everyday manipulation tasks.</p>
+                <p style="margin-top:0.5rem;"><strong>My Contribution:</strong> Fabricated 14 Kresling origami actuators through a complete manufacturing pipeline. Built ROS2 launch sequencing for multi-node operation. Co-developed PID controller for vacuum pressure regulation achieving &lt;5mm position error in 2D, &lt;10mm in 3D, and 680g payload capacity.</p>
             </div>
             <div class="publication">
                 <div class="publication-title">Vision Based CNC Pick-and-Place Machine with Machine Learning</div>
-                <div class="publication-authors">
-                    Dhiraj Zen B K, Rishikesh Selvaraj Pillai, Nirenjan K, <strong>Ahilesh V</strong>
-                </div>
+                <div class="publication-authors">Dhiraj Zen B K, Rishikesh Selvaraj Pillai, Nirenjan K, <strong>Ahilesh V</strong></div>
                 <p><strong>Published:</strong> Bachelor's Thesis, Anna University — May 2024</p>
                 <p><strong>Supervisor:</strong> Dr. N. Ramadass, Department of Electronics and Communication Engineering</p>
-                <p style="margin-top: 0.5rem;"><strong>Overview:</strong> Complete autonomous CNC system combining computer vision algorithms (contour detection, Canny edge detection, template matching) with CNN-based object classification. 
-                Achieved 99% picking accuracy across object classes. Utilized Raspberry Pi for vision processing and G-code generation for precise pick-and-place operations.</p>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- ── CONTACT ── -->
         <section id="contact">
             <h2>Let's Connect</h2>
             <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:vadivel.a@northeastern.edu">vadivel.a@northeastern.edu</a></p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p><a href="YOUR_LINKEDIN_URL" target="_blank">Connect with me</a></p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">👨‍💻</div>
-                    <h3>GitHub</h3>
-                    <p><a href="https://github.com/vadivel-ahi" target="_blank">@vadivel-ahi</a></p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📄</div>
-                    <h3>Resume</h3>
-                    <p><a href="YOUR_RESUME_LINK.pdf" download>Download PDF</a></p>
-                </div>
+                <div class="contact-item"><div class="contact-icon">📧</div><h3>Email</h3><p><a href="mailto:vadivel.a@northeastern.edu">vadivel.a@northeastern.edu</a></p></div>
+                <div class="contact-item"><div class="contact-icon">💼</div><h3>LinkedIn</h3><p><a href="YOUR_LINKEDIN_URL" target="_blank">Connect with me</a></p></div>
+                <div class="contact-item"><div class="contact-icon">👨‍💻</div><h3>GitHub</h3><p><a href="https://github.com/vadivel-ahi" target="_blank">@vadivel-ahi</a></p></div>
+                <div class="contact-item"><div class="contact-icon">📄</div><h3>Resume</h3><p><a href="YOUR_RESUME_LINK.pdf" download>Download PDF</a></p></div>
             </div>
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                <h3 style="color: #1e3a5f; margin-bottom: 1rem;">Currently Seeking Opportunities</h3>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
+            <div style="text-align:center;margin-top:3rem;padding:2rem;background:white;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+                <h3 style="color:#1e3a5f;margin-bottom:1rem;">Currently Seeking Opportunities</h3>
+                <p style="font-size:1.1rem;line-height:1.8;">
                     I'm actively looking for full-time positions starting May 2026 in:<br>
                     <strong>Dynamic Locomotion · Legged Robotics · Autonomous Navigation · Mobile Manipulation · Controls Engineering · Perception Systems</strong>
                 </p>
-                <p style="margin-top: 1rem; color: #666;">
-                    Available on F-1 OPT | Open to relocation within the United States
-                </p>
+                <p style="margin-top:1rem;color:#666;">Available on F-1 OPT | Open to relocation within the United States</p>
             </div>
         </section>
-    </div>
+    </div><!-- /container -->
 
     <footer>
         <p>© 2026 Ahilesh Vadivel. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Robotics Engineer | M.S. Robotics (4.0 GPA), Northeastern University | B.E. ECE, Anna University</p>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">Robotics Engineer | M.S. Robotics (4.0 GPA), Northeastern University | B.E. ECE, Anna University</p>
     </footer>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
+</div><!-- /#mainView -->
 
-        // Project filter tabs
-        const tabs = document.querySelectorAll('.filter-tab');
-        const cards = document.querySelectorAll('.project-card');
+<!-- ═══════════════════════════════════════════ DETAIL VIEW ═══ -->
+<div id="detailView">
+    <div class="detail-back-bar">
+        <button class="detail-back-btn" onclick="closeDetail()">← Back to Projects</button>
+    </div>
+    <div id="detailHero" class="detail-hero default"></div>
+    <div class="detail-container">
+        <div id="detailContent"></div>
+    </div>
+</div>
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                const filter = tab.dataset.filter;
-                cards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            });
-        });
+<script>
+// ── Photo injection ──────────────────────────────────────────
+const PHOTO = "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";
+document.getElementById('heroPhoto').src  = "data:image/jpeg;base64," + PHOTO;
+document.getElementById('aboutPhoto').src = "data:image/jpeg;base64," + PHOTO;
 
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+// ── Project data ─────────────────────────────────────────────
+const PROJECTS = [
+  {
+    id: "rl-quad",
+    category: "locomotion",
+    color: "rl",
+    emoji: "🐜",
+    title: "Reinforcement Learning for Quadruped Locomotion",
+    meta: "Northeastern University · Feb 2026 – Apr 2026",
+    tags: ["PPO", "MuJoCo", "PyTorch", "Gymnasium", "Legged Robotics"],
+    excerpt: "PPO-based RL policy for quadruped (Ant) locomotion in MuJoCo, processing 105-dimensional proprioceptive observations to generate 8 continuous torque commands.",
+    overview: "Developed a PPO-based reinforcement learning policy for quadruped (Ant) locomotion in MuJoCo simulation, demonstrating a learning-based approach to dynamic legged robot control. The system processes high-dimensional proprioceptive observations and outputs continuous joint torques in real time.",
+    bullets: [
+      "Implemented complete RL training pipeline using PyTorch and Gymnasium (Ant-v5 environment), processing 105-dimensional proprioceptive observations (joint angles, velocities, contact forces) to generate 8 continuous torque commands.",
+      "Achieved a baseline reward of 1,873 on flat terrain through systematic reward shaping, establishing a robust locomotion controller.",
+      "Designed and tuned PPO hyperparameters (clip ratio, entropy coefficient, GAE-λ) to stabilize training across diverse initial conditions.",
+      "Currently extending the system with vision-based terrain perception for adaptive locomotion across varying terrain conditions — integrating a computer vision classifier with the locomotion policy."
+    ],
+    achievement: "🏆 Baseline reward of 1,873 on flat terrain via systematic reward shaping"
+  },
+  {
+    id: "deep-recognition",
+    category: "perception",
+    color: "vision",
+    emoji: "🧠",
+    title: "Multi-Architecture Deep Learning Recognition",
+    meta: "Northeastern University · Mar 2026 – Apr 2026",
+    tags: ["CNN", "Vision Transformer", "Transfer Learning", "Gabor Filters", "PyTorch"],
+    excerpt: "Built and compared CNN, Vision Transformer, and transfer learning architectures — achieving 98.9% accuracy with a Gabor+CNN hybrid and 89% few-shot accuracy from just 27 samples.",
+    overview: "A comprehensive study of deep learning architectures for visual recognition, comparing convolutional networks, attention-based transformers, and hybrid hand-crafted/learned feature approaches across multiple datasets and tasks.",
+    bullets: [
+      "Built and trained a custom CNN for MNIST digit recognition achieving 98.1% accuracy, implementing complete PyTorch pipeline with filter visualization and activation mapping.",
+      "Demonstrated transfer learning effectiveness by adapting a pretrained MNIST network to Greek letter classification (alpha, beta, gamma) using only 27 training examples — achieving 89% accuracy by freezing feature extraction layers.",
+      "Re-implemented a recognition pipeline using Vision Transformer architecture with patch embedding and multi-head self-attention, analyzing architectural tradeoffs between spatial inductive bias and self-attention.",
+      "Conducted systematic hyperparameter search on Fashion MNIST across 4 dimensions (conv filter counts, dropout rate, FC hidden nodes, batch size), identifying batch size as the most impactful parameter with a 4% accuracy swing.",
+      "Extended CNN with a fixed Gabor filter bank replacing the first convolutional layer, achieving 98.9% accuracy (+0.8% over fully trained CNN) and 3% faster convergence — demonstrating the complementary value of hand-crafted and learned features."
+    ],
+    achievement: "🏆 98.9% accuracy with Gabor+CNN hybrid · 89% few-shot accuracy from only 27 samples"
+  },
+  {
+    id: "camera-ar",
+    category: "perception",
+    color: "vision",
+    emoji: "📷",
+    title: "Camera Calibration and Augmented Reality System",
+    meta: "Northeastern University · Feb 2026 – Mar 2026",
+    tags: ["Zhang's Method", "OpenCV", "solvePnP", "Harris Detector", "6-DOF Pose"],
+    excerpt: "Complete camera calibration and AR pipeline from scratch using Zhang's method, achieving 1.28-pixel RMS reprojection error and real-time 6-DOF AR overlay.",
+    overview: "Built a full camera calibration and augmented reality pipeline from the ground up, implementing classical computer vision algorithms for intrinsic parameter estimation and real-time pose tracking.",
+    bullets: [
+      "Built complete camera calibration pipeline using Zhang's method, detecting and refining 54 chessboard corners to sub-pixel accuracy with cornerSubPix across 10–15 frames.",
+      "Computed camera intrinsic matrix and distortion coefficients via calibrateCamera achieving 1.28-pixel RMS reprojection error, recovering focal lengths (fx=fy=481.90) and principal point near image center.",
+      "Implemented real-time 6-DOF pose estimation using solvePnP to track checkerboard motion, projecting a 3D virtual object (rocket ship) that correctly maintains orientation and position as the camera moves through a live video stream.",
+      "Developed a Harris corner detector with adjustable threshold for robust feature tracking, exploring target-free AR potential through feature-based pose estimation as an alternative to known calibration patterns."
+    ],
+    achievement: "🏆 1.28-pixel RMS reprojection error · Real-time 6-DOF AR overlay"
+  },
+  {
+    id: "object-recognition",
+    category: "perception",
+    color: "vision",
+    emoji: "🔍",
+    title: "Real-Time 2D Object Recognition System",
+    meta: "Northeastern University · Feb 2026 – Mar 2026",
+    tags: ["Computer Vision", "ISODATA Thresholding", "K-NN", "ResNet18", "Geometric Features"],
+    excerpt: "Real-time object recognition pipeline at 30 FPS achieving 100% classification accuracy across 5 object classes using rotation-invariant geometric features.",
+    overview: "Designed and implemented a real-time object recognition system operating on a live mobile camera feed, combining classical hand-crafted feature engineering with deep learning embeddings for comparative analysis.",
+    bullets: [
+      "Built real-time object recognition pipeline at 30 FPS from a live mobile camera feed, implementing dynamic ISODATA thresholding in HSV color space, morphological cleaning, and connected components analysis.",
+      "Developed translation, scale, and rotation-invariant recognition using five geometric features: axis of least central moment, oriented bounding box, percent filled, eccentricity, and Hu moments with K-NN classifier.",
+      "Achieved 100% classification accuracy across 5 object classes (15 test samples, 3 per class) using hand-crafted geometric features with scaled Euclidean distance matching.",
+      "Implemented one-shot classification using pretrained ResNet18 embeddings (512-dimensional vectors from global average pooling), comparing deep learning (62.5% accuracy) against geometric features and analyzing performance tradeoffs."
+    ],
+    achievement: "🏆 100% classification accuracy across 5 object classes at 30 FPS"
+  },
+  {
+    id: "image-retrieval",
+    category: "perception",
+    color: "vision",
+    emoji: "🖼️",
+    title: "Content-Based Image Retrieval System",
+    meta: "Northeastern University · Jan 2026 – Feb 2026",
+    tags: ["ResNet18", "Histogram Intersection", "Feature Fusion", "OpenCV", "Python"],
+    excerpt: "Comprehensive image retrieval system with 6 matching methods querying a 1,107-image database, with a custom hybrid car retrieval system outperforming pure deep learning.",
+    overview: "Built a multi-method image retrieval system that compares classical feature descriptors against deep learning embeddings, culminating in a custom domain-specific hybrid approach.",
+    bullets: [
+      "Built comprehensive image retrieval system implementing six matching methods ranging from pixel-level comparison to deep learning embeddings, querying a 1,107-image Olympus database.",
+      "Implemented classical feature descriptors including RGB color histograms with histogram intersection, multi-region spatial histograms, and combined color-texture features using gradient magnitude and orientation.",
+      "Integrated pretrained ResNet18 embeddings (512-dimensional vectors from global average pooling) with cosine distance metric, demonstrating semantic object recognition across visual variations.",
+      "Designed a custom hybrid car retrieval system combining ResNet18 embeddings (35%) with domain-specific features: circle detection for wheels, aspect ratio analysis, lower-region texture, metallic surface detection, and horizontal line density — outperforming pure deep learning or hand-crafted approaches alone."
+    ],
+    achievement: "🏆 Hybrid feature fusion outperforms both pure deep learning and classical approaches"
+  },
+  {
+    id: "multi-robot",
+    category: "navigation",
+    color: "nav",
+    emoji: "🤝",
+    title: "Synchronization of Two Mobile Robots",
+    meta: "Northeastern University · Oct 2024 – Dec 2024",
+    tags: ["ROS", "SLAM", "AMCL", "Gazebo", "Multi-Agent"],
+    excerpt: "Autonomous navigation for two TurtleBot3 robots with collaborative SLAM, map merging, and TF frame isolation in Gazebo simulation.",
+    overview: "Implemented a complete multi-robot navigation system demonstrating collaborative mapping, localization, and real-time coordination between two independently operating robots.",
+    bullets: [
+      "Implemented autonomous navigation for two TurtleBot3 robots in Gazebo, configuring slam_gmapping with AMCL localization and move_base for goal-based path planning and execution.",
+      "Designed multi-robot simulation architecture managing namespace hierarchy, TF frame isolation, and robot spawning to prevent frame conflicts between independently operating robots.",
+      "Developed map merging pipeline using multirobot_map_merge to combine SLAM-generated maps from separate robots exploring a shared environment, creating a unified spatial representation.",
+      "Configured RViz visualization for real-time monitoring of dual-robot sensor data, localization estimates, and navigation paths, supporting system debugging and performance analysis."
+    ],
+    achievement: "🏆 Successful multi-robot SLAM coordination with unified map merging"
+  },
+  {
+    id: "fssm",
+    category: "navigation",
+    color: "nav",
+    emoji: "📍",
+    title: "Mobile Robot Localization via Place Learning (FSSM)",
+    meta: "Northeastern University · Mar 2025 – Apr 2025",
+    tags: ["Scan Matching", "SVM", "RANSAC", "Particle Filter", "Localization"],
+    excerpt: "Re-implementation of Fast Spectral Scan Matching achieving 106× memory reduction and 156× speed improvement over traditional SSM.",
+    overview: "Re-implemented the Fast Spectral Scan Matching algorithm from a research paper, combining computational efficiency techniques with machine learning-based place recognition for global robot localization.",
+    bullets: [
+      "Re-implemented Fast Spectral Scan Matching (FSSM) from a research paper, achieving 106× memory reduction and 156× speed improvement over traditional Spectral Scan Matching through matrix approximation with Kronecker products and bistochastic normalization.",
+      "Developed scan matching implementation for 2D range scans in the NEU Racing simulation environment using correspondence detection between laser scans.",
+      "Implemented SVM classifier using scikit-learn for place recognition, exploring hyperplane separation with different kernel functions (linear, polynomial, RBF, sigmoid).",
+      "Integrated FSSM with RANSAC pose estimation and unicycle motion model, identifying limitations in continuous localization application and areas for parameter tuning refinement."
+    ],
+    achievement: "🏆 106× memory reduction · 156× speed improvement over traditional SSM"
+  },
+  {
+    id: "origami-gripper",
+    category: "manipulation",
+    color: "soft",
+    emoji: "🤏",
+    title: "In-Hand Manipulation with Kresling Origami Grippers",
+    meta: "PARSES Lab, Northeastern University · Jan 2025 – Dec 2025",
+    tags: ["Soft Robotics", "ROS2", "UR3 Arm", "Arduino DUE", "Pneumatic Control"],
+    excerpt: "Independently pioneered a novel application of Kresling origami grippers to in-hand manipulation, achieving 85% success rate across 20+ trials.",
+    overview: "This project independently introduced Kresling origami soft grippers to in-hand manipulation — an entirely unexplored application in compliant robotics — from concept through hardware fabrication and experimental validation.",
+    bullets: [
+      "Independently pioneered novel research applying Kresling origami soft grippers to in-hand manipulation, an unexplored application in compliant robotics.",
+      "Designed and iterated two gripper configurations (3-finger to 4-finger) through 3D printing and UR3 arm integration, programming repetitive pick-and-manipulate tasks via teach pendant.",
+      "Developed Arduino DUE teleoperation control and implemented a screwing-based manipulation algorithm using alternating positive/negative pressure actuation.",
+      "Validated approach through 20+ experimental trials achieving 85% success rate on geometric objects (cubes, cuboids) and irregular shapes (oranges, apples), establishing proof-of-concept for future publication."
+    ],
+    achievement: "🏆 85% success rate on geometric & irregular objects · Novel research application"
+  },
+  {
+    id: "fbra",
+    category: "safety",
+    color: "safety",
+    emoji: "🛡️",
+    title: "Forward-Backward Reachability Analysis (FBRA)",
+    meta: "Northeastern University · Nov 2025 – Dec 2025",
+    tags: ["Formal Verification", "Interval Bound Propagation", "Linear Programming", "Safety-Critical", "Python"],
+    excerpt: "Re-implementation of FBRA for verifying neural network controllers, achieving 100% conclusive safety verification across 5 controller configurations in under 1 second each.",
+    overview: "Re-implemented a research-grade formal verification algorithm to certify the safety of neural network controllers for autonomous systems — addressing a critical gap in deploying learned policies in safety-critical robotics.",
+    bullets: [
+      "Re-implemented the FBRA algorithm from a research paper to verify safety of neural network controllers, combining forward reachability, backward filtering, and targeted refinement.",
+      "Developed complete Python verification pipeline using interval bound propagation and linear programming-based backward reachability, tested on ground robot navigation and double integrator benchmarks.",
+      "Achieved 100% conclusive safety verification across five controller configurations (safe, buggy, PD, default, aggressive), with all verifications completing in under 1 second at maximum partitioning depth of 2.",
+      "Demonstrated FBRA's ability to detect unsafe behaviors in biased controllers while confirming safety in stable systems — resolving cases where forward-only approaches yield inconclusive results."
+    ],
+    achievement: "🏆 100% conclusive safety verification across 5 controllers · All under 1 second"
+  },
+  {
+    id: "fgsm",
+    category: "safety",
+    color: "safety",
+    emoji: "⚠️",
+    title: "Adversarial Attack Simulation (FGSM)",
+    meta: "Northeastern University",
+    tags: ["FGSM", "ML Security", "TensorFlow", "MNIST", "Robustness"],
+    excerpt: "Systematic adversarial attack study on neural network classifiers to understand safety implications for robotic perception in safety-critical systems.",
+    overview: "Explored neural network vulnerabilities through systematic adversarial attacks, with a focus on understanding safety implications for robotic perception systems deployed in safety-critical applications.",
+    bullets: [
+      "Trained an MNIST classifier and systematically attacked it using constant offsets, noise injection, standard FGSM, and targeted FGSM.",
+      "Analyzed the sensitivity of neural networks to input perturbations of varying magnitudes and directions to characterize their decision boundaries.",
+      "Connected findings to real-world robotics safety: adversarial robustness is critical for perception systems used in autonomous navigation and manipulation.",
+      "Results informed understanding of verifiable ML requirements for deploying neural network policies in safety-critical robotic applications."
+    ],
+    achievement: "🏆 Demonstrated NN vulnerabilities directly relevant to safety-critical robotic systems"
+  },
+  {
+    id: "cnc",
+    category: "manipulation",
+    color: "default",
+    emoji: "🏭",
+    title: "Vision-Based CNC Pick-and-Place with ML",
+    meta: "Anna University · Nov 2023 – Feb 2024 · Bachelor's Thesis",
+    tags: ["CNN", "Computer Vision", "G-code", "Raspberry Pi", "Automation"],
+    excerpt: "ML-enabled CNC pick-and-place system achieving 99% picking accuracy across object classes, integrating computer vision with G-code generation. Published as undergraduate thesis.",
+    overview: "Led the computer vision development of a fully automated CNC pick-and-place system for the undergraduate capstone, integrating machine learning-based recognition with hardware control.",
+    bullets: [
+      "Led computer vision development implementing contour detection, Canny edge detection, and template matching algorithms for autonomous object recognition and localization.",
+      "Trained and integrated a CNN for real-time object classification, achieving 99% picking accuracy across three distinct coin types with demonstrated scalability to 10+ object classes.",
+      "Programmed Raspberry Pi to coordinate vision processing with G-code generation for CNC control, creating a fully automated system for dynamic object recognition and precise manipulation.",
+      "Demonstrated practical applications including automated game piece manipulation and QR code-based blood sample identification, validating the ML-based approach for flexible manufacturing automation.",
+      "Published results as undergraduate bachelor's thesis, supervised by Dr. N. Ramadass."
+    ],
+    achievement: "🏆 99% picking accuracy · Published undergraduate thesis"
+  },
+  {
+    id: "continuum",
+    category: "manipulation",
+    color: "soft",
+    emoji: "🪱",
+    title: "Tendon-Driven Continuum Robot",
+    meta: "Anna University · Oct 2023 – Dec 2023",
+    tags: ["Continuum Robotics", "Arduino", "PCB Design", "Servo Control", "Kinematics"],
+    excerpt: "Designed and fabricated a continuum robot with infinite DoF using tendon actuation, achieving 8 distinct end-effector positions with custom PCB integration.",
+    overview: "Designed, fabricated, and controlled a tendon-driven continuum robot — a system with theoretically infinite degrees of freedom — exploring soft robotic principles for manipulation in constrained spaces.",
+    bullets: [
+      "Designed and fabricated a continuum robot with infinite degrees of freedom using tendon-based actuation and servo motor control.",
+      "Developed Arduino UNO control algorithms achieving 8 distinct end-effector positions through coordinated tendon actuation, demonstrating successful kinematic control of a compliant structure.",
+      "Designed and fabricated a custom PCB shield for Arduino UNO integrating multiple servo motor drivers — solving the primary challenge of synchronized tendon coordination.",
+      "Characterized kinematic behavior and demonstrated a working prototype capable of controlled bending and positioning for constrained-space applications."
+    ],
+    achievement: "🏆 8 distinct end-effector positions with custom PCB integration"
+  },
+  {
+    id: "agri-rover",
+    category: "navigation",
+    color: "nav",
+    emoji: "🌾",
+    title: "Autonomous Agricultural Monitoring Rover",
+    meta: "Anna University · Dec 2021 – Mar 2022",
+    tags: ["Autonomous Nav", "Sensor Fusion", "Fusion 360", "Raspberry Pi", "IoT"],
+    excerpt: "Novel arch-shaped chassis design for non-disruptive crop-row navigation with IoT sensor fusion. Recognized at university ideathon.",
+    overview: "Designed and built an autonomous agricultural monitoring rover with a novel mechanical chassis concept, integrating sensor fusion and IoT connectivity for remote crop monitoring.",
+    bullets: [
+      "Designed a novel arch-shaped chassis concept for non-disruptive crop-row navigation, modeled in Fusion 360 and fabricated via 3D printing and metal base components.",
+      "Integrated Raspberry Pi with L298N motor driver for teleoperated control, implementing motor control algorithms and establishing the foundation for autonomous navigation.",
+      "Developed sensor integration combining soil moisture and environmental humidity sensors with IoT connectivity for remote data collection and monitoring.",
+      "Presented prototype at university ideathon, receiving recognition for innovative mechanical design approach to agricultural robotics challenges."
+    ],
+    achievement: "🏆 Ideathon recognition for novel arch-chassis mechanical design"
+  }
+];
 
-        document.querySelectorAll('.project-card, .timeline-item, .skill-category, .publication').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
+// ── Render tiles ──────────────────────────────────────────────
+function renderTiles(filter) {
+    const grid = document.getElementById('projectsGrid');
+    grid.innerHTML = '';
+    PROJECTS.forEach(p => {
+        if (filter !== 'all' && p.category !== filter) return;
+        const tile = document.createElement('div');
+        tile.className = 'project-tile';
+        tile.innerHTML = `
+            <div class="tile-banner ${p.color}">
+                <span style="font-size:2.4rem;">${p.emoji}</span>
+                <span class="tile-category-badge">${categoryLabel(p.category)}</span>
+            </div>
+            <div class="tile-body">
+                <div class="tile-title">${p.title}</div>
+                <div class="tile-meta">${p.meta}</div>
+                <div class="tile-tags">${p.tags.slice(0,4).map(t=>`<span class="tile-tag">${t}</span>`).join('')}</div>
+                <div class="tile-excerpt">${p.excerpt}</div>
+                <span class="tile-cta">View Details →</span>
+            </div>`;
+        tile.addEventListener('click', () => openDetail(p.id));
+        grid.appendChild(tile);
+    });
+}
+
+function categoryLabel(c) {
+    return {locomotion:'Locomotion',perception:'Perception',navigation:'Navigation',manipulation:'Manipulation',safety:'Safety'}[c] || c;
+}
+
+// ── Filter tabs ───────────────────────────────────────────────
+document.querySelectorAll('.filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderTiles(tab.dataset.filter);
+    });
+});
+
+// ── Detail view ───────────────────────────────────────────────
+function openDetail(id) {
+    const p = PROJECTS.find(x => x.id === id);
+    if (!p) return;
+
+    document.getElementById('mainView').classList.add('hidden');
+    const dv = document.getElementById('detailView');
+    dv.classList.add('active');
+
+    // hero banner
+    const hero = document.getElementById('detailHero');
+    hero.className = `detail-hero ${p.color}`;
+    hero.innerHTML = `<span style="font-size:4rem;">${p.emoji}</span>`;
+
+    // content
+    const content = document.getElementById('detailContent');
+    content.innerHTML = `
+        <div class="detail-title">${p.title}</div>
+        <div class="detail-meta">${p.meta}</div>
+        <div class="detail-tags">${p.tags.map(t=>`<span class="detail-tag">${t}</span>`).join('')}</div>
+        <div class="detail-body">
+            <div class="detail-section-title">Overview</div>
+            <p>${p.overview}</p>
+            <div class="detail-section-title">What I Did</div>
+            <ul class="detail-bullets">${p.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>
+            <div class="detail-achievement">${p.achievement}</div>
+        </div>`;
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function closeDetail() {
+    document.getElementById('detailView').classList.remove('active');
+    const mv = document.getElementById('mainView');
+    mv.classList.remove('hidden');
+    setTimeout(() => {
+        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+}
+
+// nav links scroll helper
+function showMain(anchor) {
+    document.getElementById('detailView').classList.remove('active');
+    document.getElementById('mainView').classList.remove('hidden');
+    if (anchor) {
+        setTimeout(() => {
+            const el = document.getElementById(anchor);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 50);
+    }
+}
+
+// ── Scroll animations ─────────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.timeline-item, .skill-category, .publication').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
+// ── Init ──────────────────────────────────────────────────────
+renderTiles('all');
+
+// smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+});
+</script>
 </body>
 </html>
