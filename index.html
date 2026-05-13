@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahilesh Vadivel - Robotics Engineer</title>
+    <title>Ahilesh Vadivel | Robotics Engineer</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
@@ -30,10 +30,6 @@
         h2 { font-size: 2.5rem; color: #1e3a5f; margin-bottom: 2rem; text-align: center; position: relative; }
         h2::after { content: ''; display: block; width: 100px; height: 4px; background: #ffd700; margin: 1rem auto; }
         h3 { font-size: 1.8rem; color: #2c5282; margin: 1.5rem 0 1rem; }
-
-        /* Domain pills in about */
-        .domain-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-        .domain-pill { background: #eef4fb; color: #2c5282; padding: 0.35rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1.5px solid #c3d9f5; }
 
         /* Timeline */
         .timeline { position: relative; padding: 2rem 0; }
@@ -140,7 +136,7 @@
 
 <nav>
     <ul>
-        <li><a href="#" onclick="showMain();return false;">About</a></li>
+        <li><a href="#about" onclick="showMain('about');return false;">About</a></li>
         <li><a href="#journey" onclick="showMain('journey');return false;">Journey</a></li>
         <li><a href="#projects" onclick="showMain('projects');return false;">Projects</a></li>
         <li><a href="#skills" onclick="showMain('skills');return false;">Skills</a></li>
@@ -153,13 +149,13 @@
 <div id="mainView">
     <div class="hero">
         <div style="display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem;">
-            <img id="heroPhoto" src="" alt="Ahilesh Vadivel" style="width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:center top;border:4px solid #ffd700;box-shadow:0 4px 20px rgba(0,0,0,0.35);">
+            <img id="heroPhoto" src="" alt="Ahilesh Vadivel" style="width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:center top;border:4px solid #ffd700;box-shadow:0 4px 20px rgba(0,0,0,0.35);image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;">
             <div style="text-align:left;">
                 <h1 style="margin-bottom:0.25rem;">Ahilesh Vadivel</h1>
-                <div class="tagline" style="margin-bottom:0;">Robotics Engineer &nbsp;|&nbsp; Locomotion &middot; Perception &middot; Navigation &middot; Control</div>
+                <div class="tagline" style="margin-bottom:0;">Robotics Engineer &nbsp;|&nbsp; Full-Stack Autonomy</div>
             </div>
         </div>
-        <div class="subtitle">Robotics engineer with deep expertise across the full stack — from learning-based locomotion and RL-trained quadruped controllers to real-time perception, multi-robot SLAM, and neural network safety verification. I build systems that move intelligently, see accurately, and operate reliably.</div>
+        <div class="subtitle">I build autonomous systems end to end, from sensor data to control output. Whether it is a legged robot learning to walk, a mobile platform navigating an unknown space, or a perception system identifying objects in real time, my instinct is always to understand the whole system, not just one layer of it.</div>
         <div class="hero-buttons">
             <a href="#projects" onclick="showMain('projects');return false;" class="btn btn-primary">View Projects</a>
             <a href="Ahilesh_Vadivel_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
@@ -172,23 +168,15 @@
             <div style="background:white;padding:2rem;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
                 <div style="display:flex;gap:2rem;align-items:flex-start;flex-wrap:wrap;margin-bottom:1.5rem;">
                     <div style="flex-shrink:0;text-align:center;">
-                        <img id="aboutPhoto" src="" alt="Ahilesh Vadivel" style="width:200px;height:240px;object-fit:cover;object-position:center top;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.18);border:3px solid #e8f4f8;">
+                        <img id="aboutPhoto" src="" alt="Ahilesh Vadivel" style="width:200px;height:240px;object-fit:cover;object-position:center top;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.18);border:3px solid #e8f4f8;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;">
                         <div style="margin-top:0.75rem;font-size:0.85rem;color:#666;font-weight:500;">M.S. Robotics, Northeastern<br>GPA: 4.0 / 4.0</div>
                     </div>
                     <div style="flex:1;min-width:260px;">
-                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">I'm a robotics engineer who recently completed my M.S. in Robotics (ECE concentration) at Northeastern University (May 2026, 4.0 GPA). My work spans four interconnected domains: <strong>dynamic locomotion</strong> (RL-trained quadruped policies, terrain-aware control), <strong>autonomous navigation</strong> (multi-robot SLAM, localization, path planning), <strong>perception and learning</strong> (CNNs, Vision Transformers, transfer learning, real-time recognition), and <strong>manipulation and soft robotics</strong> (Kresling origami grippers, continuum robots, published research in <em>Soft Robotics</em>). I'm equally comfortable working at the algorithm level in Python/PyTorch and at the systems level in ROS2/C++ with embedded hardware.</p>
+                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">I am a robotics engineer who recently completed my M.S. in Robotics (ECE concentration) at Northeastern University in May 2026 with a 4.0 GPA. What defines my work is not a single domain but a consistent drive to close the loop between perception, planning, and action in physical systems. I have built and shipped projects across legged locomotion, autonomous navigation, deep learning perception, formal safety verification, and soft robotics manipulation, always with an eye on how each piece connects to the whole.</p>
 
-                        <div class="domain-pills">
-                            <span class="domain-pill">🦾 Dynamic Locomotion</span>
-                            <span class="domain-pill">🤖 Autonomous Mobile Robots</span>
-                            <span class="domain-pill">👁️ Perception &amp; ML</span>
-                            <span class="domain-pill">🦿 Manipulation</span>
-                            <span class="domain-pill">⚙️ Controls &amp; Embedded</span>
-                        </div>
+                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">My strongest work lives at the intersection of learning and control. I have trained RL policies for quadruped locomotion in MuJoCo, integrated vision-based terrain classifiers into those policies, published research on a soft origami robot arm in the journal <em>Soft Robotics</em>, and formally verified neural network controllers for safety-critical systems. I am equally comfortable writing PyTorch training loops, debugging ROS2 node graphs, and assembling hardware prototypes.</p>
 
-                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">What drives me is the challenge of making robots move intelligently through complex environments — whether it's a quadruped learning locomotion through reinforcement learning, a multi-robot team collaboratively mapping an unknown space, or a neural network controller whose safety can be formally verified.</p>
-
-                        <p style="font-size:1.1rem;line-height:1.8;"><strong>Currently seeking:</strong> Full-time opportunities starting May 2026 in dynamic locomotion, autonomous mobile robots, perception &amp; learning systems, manipulation, or controls engineering. Available on F-1 OPT &nbsp;|&nbsp; Open to relocation within the United States.</p>
+                        <p style="font-size:1.1rem;line-height:1.8;">I am actively seeking full-time roles where I can contribute to building robots that operate reliably in the real world. Available on F-1 OPT starting May 2026 and open to relocation anywhere in the United States.</p>
                     </div>
                 </div>
             </div>
@@ -203,7 +191,7 @@
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">2023–2024</div><h3>Integration Mastery: Vision-Based CNC Capstone</h3><p>Led computer vision development for an ML-enabled CNC pick-and-place system achieving 99% picking accuracy. Published as bachelor's thesis.</p></div></div>
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">2024–2026</div><h3>Specialization: M.S. in Robotics at Northeastern (4.0 GPA)</h3><p>Systematic exploration through graduate coursework tackling 12+ hands-on projects spanning RL-based quadruped locomotion, deep learning perception, SLAM, formal verification, and soft robotics.</p></div></div>
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">Jan 2025–Dec 2025</div><h3>Research Experience: PARSES Lab Graduate RA</h3><p>Contributed to a 4-DoF soft origami robot arm published in <em>Soft Robotics</em> journal. Independently pioneered in-hand manipulation with Kresling grippers at 85% success rate.</p></div></div>
-                <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">May 2026</div><h3>Next Chapter: Full-Time Robotics Engineer</h3><p>Graduated with expertise spanning dynamic locomotion, learning-based control, autonomous navigation, perception, and manipulation. Ready to contribute across legged robotics, mobile robots, or intelligent systems teams.</p></div></div>
+                <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">May 2026</div><h3>Next Chapter: Full-Time Robotics Engineer</h3><p>Graduated with a systems-level perspective on robotics, having shipped projects spanning locomotion, navigation, perception, manipulation, and safety verification. Ready to bring that breadth and depth to a team building robots that work in the real world.</p></div></div>
             </div>
         </section>
 
@@ -239,13 +227,13 @@
             <div class="publication">
                 <div class="publication-title">A 3D-Printed, 4-Degree of Freedom Soft Origami Robot Arm</div>
                 <div class="publication-authors">Immanuel Ampomah Mensah, Owen Lewis, Joseph Allen, <strong>Ahilesh Vadivel</strong>, Celina Wu, Andrea Lacunza, Nathaniel Hanson, and Kristen L. Dorsey</div>
-                <p><strong>Published:</strong> Soft Robotics (Journal) — 2025</p>
+                <p><strong>Published:</strong> Soft Robotics (Journal), 2025</p>
                 <p style="margin-top:0.5rem;"><strong>My Contribution:</strong> Fabricated 14 Kresling origami actuators through a complete manufacturing pipeline. Built ROS2 launch sequencing for multi-node operation. Co-developed PID controller for vacuum pressure regulation achieving &lt;5mm position error in 2D, &lt;10mm in 3D, and 680g payload capacity.</p>
             </div>
             <div class="publication">
                 <div class="publication-title">Vision Based CNC Pick-and-Place Machine with Machine Learning</div>
                 <div class="publication-authors">Dhiraj Zen B K, Rishikesh Selvaraj Pillai, Nirenjan K, <strong>Ahilesh V</strong></div>
-                <p><strong>Published:</strong> Bachelor's Thesis, Anna University — May 2024</p>
+                <p><strong>Published:</strong> Bachelor's Thesis, Anna University, May 2024</p>
                 <p><strong>Supervisor:</strong> Dr. N. Ramadass, Department of Electronics and Communication Engineering</p>
             </div>
         </section>
@@ -260,8 +248,7 @@
             </div>
             <div style="text-align:center;margin-top:3rem;padding:2rem;background:white;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
                 <h3 style="color:#1e3a5f;margin-bottom:1rem;">Currently Seeking Opportunities</h3>
-                <p style="font-size:1.1rem;line-height:1.8;">I'm actively looking for full-time positions starting May 2026 in:<br>
-                <strong>Dynamic Locomotion &middot; Legged Robotics &middot; Autonomous Navigation &middot; Mobile Robots &middot; Perception &amp; ML &middot; Manipulation &middot; Controls Engineering &middot; Embedded Systems</strong></p>
+                <p style="font-size:1.1rem;line-height:1.8;">I am actively looking for full-time robotics engineering positions starting May 2026. I bring hands-on experience across the autonomy stack and a genuine enthusiasm for whatever challenge comes next.</p>
                 <p style="margin-top:1rem;color:#666;">Available on F-1 OPT &nbsp;|&nbsp; Open to relocation within the United States</p>
             </div>
         </section>
@@ -559,11 +546,11 @@ const PROJECTS = [
   { id:"image-retrieval", category:"perception", title:"Content-Based Image Retrieval System", meta:"Northeastern University · Jan 2026 – Feb 2026", tags:["ResNet18","Histogram Intersection","Feature Fusion","OpenCV","Python"], excerpt:"Comprehensive image retrieval system with 6 matching methods querying a 1,107-image database, with a custom hybrid car retrieval system outperforming pure deep learning.", overview:"Built a multi-method image retrieval system comparing classical feature descriptors against deep learning embeddings, culminating in a domain-specific hybrid approach.", bullets:["Built image retrieval system implementing 6 matching methods — from pixel-level comparison to deep learning embeddings — querying a 1,107-image Olympus database.","Implemented classical descriptors including RGB histograms with histogram intersection, multi-region spatial histograms, and gradient texture features.","Integrated pretrained ResNet18 embeddings (512-dim) with cosine distance metric for semantic object recognition across visual variations.","Designed custom hybrid car retrieval combining ResNet18 (35%) with domain-specific features (wheel circle detection, aspect ratio, metallic surface detection) — outperforming either approach alone."], achievement:"🏆 Hybrid feature fusion outperforms both pure deep learning and classical approaches" },
   { id:"multi-robot", category:"navigation", title:"Synchronization of Two Mobile Robots", meta:"Northeastern University · Oct 2024 – Dec 2024", tags:["ROS","SLAM","AMCL","Gazebo","Multi-Agent"], excerpt:"Autonomous navigation for two TurtleBot3 robots with collaborative SLAM, map merging, and TF frame isolation in Gazebo simulation.", overview:"Implemented a complete multi-robot navigation system demonstrating collaborative mapping, localization, and real-time coordination between two independently operating robots.", bullets:["Implemented autonomous navigation for two TurtleBot3 robots in Gazebo, configuring slam_gmapping with AMCL localization and move_base for goal-based path planning.","Designed multi-robot architecture managing namespace hierarchy and TF frame isolation to prevent conflicts between independently operating robots.","Developed map merging pipeline using multirobot_map_merge to combine SLAM-generated maps into a unified spatial representation.","Configured RViz visualization for real-time monitoring of dual-robot sensor data, localization estimates, and navigation paths."], achievement:"🏆 Successful multi-robot SLAM coordination with unified map merging" },
   { id:"fssm", category:"navigation", title:"Mobile Robot Localization via Place Learning (FSSM)", meta:"Northeastern University · Mar 2025 – Apr 2025", tags:["Scan Matching","SVM","RANSAC","Particle Filter","Localization"], excerpt:"Re-implementation of Fast Spectral Scan Matching achieving 106× memory reduction and 156× speed improvement over traditional SSM.", overview:"Re-implemented the Fast Spectral Scan Matching algorithm from a research paper, combining computational efficiency techniques with ML-based place recognition for global localization.", bullets:["Re-implemented FSSM achieving 106× memory reduction and 156× speed improvement over traditional SSM via Kronecker products and bistochastic normalization.","Developed scan matching for 2D range scans in the NEU Racing simulation environment.","Implemented SVM classifier for place recognition, exploring linear, polynomial, RBF, and sigmoid kernels.","Integrated FSSM with RANSAC pose estimation and unicycle motion model."], achievement:"🏆 106× memory reduction · 156× speed improvement over traditional SSM" },
-  { id:"origami-gripper", category:"manipulation", title:"In-Hand Manipulation with Kresling Origami Grippers", meta:"PARSES Lab, Northeastern University · Jan 2025 – Dec 2025", tags:["Soft Robotics","ROS2","UR3 Arm","Arduino DUE","Pneumatic Control"], excerpt:"Independently pioneered a novel application of Kresling origami grippers to in-hand manipulation, achieving 85% success rate across 20+ trials.", overview:"This project introduced Kresling origami soft grippers to in-hand manipulation — an entirely unexplored area in compliant robotics — from concept through hardware fabrication and experimental validation.", bullets:["Independently pioneered novel research applying Kresling origami soft grippers to in-hand manipulation.","Designed and iterated 3-finger and 4-finger gripper configurations through 3D printing and UR3 arm integration.","Developed Arduino DUE teleoperation control and implemented screwing-based manipulation algorithm using alternating positive/negative pressure actuation.","Validated through 20+ trials achieving 85% success rate on geometric objects and irregular shapes (oranges, apples)."], achievement:"🏆 85% success rate on geometric & irregular objects · Novel research application" },
+  { id:"origami-gripper", category:"manipulation", title:"In-Hand Manipulation with Kresling Origami Grippers", meta:"PARSES Lab, Northeastern University · Jan 2025 – Dec 2025", tags:["Soft Robotics","ROS2","UR3 Arm","Arduino DUE","Pneumatic Control"], excerpt:"Independently pioneered a novel application of Kresling origami grippers to in-hand manipulation, achieving 85% success rate across 20+ trials.", overview:"This project introduced Kresling origami soft grippers to in-hand manipulation, an entirely unexplored area in compliant robotics, from concept through hardware fabrication and experimental validation.", bullets:["Independently pioneered novel research applying Kresling origami soft grippers to in-hand manipulation.","Designed and iterated 3-finger and 4-finger gripper configurations through 3D printing and UR3 arm integration.","Developed Arduino DUE teleoperation control and implemented screwing-based manipulation algorithm using alternating positive/negative pressure actuation.","Validated through 20+ trials achieving 85% success rate on geometric objects and irregular shapes (oranges, apples)."], achievement:"🏆 85% success rate on geometric & irregular objects · Novel research application" },
   { id:"fbra", category:"safety", title:"Forward-Backward Reachability Analysis (FBRA)", meta:"Northeastern University · Nov 2025 – Dec 2025", tags:["Formal Verification","Interval Bound Propagation","Linear Programming","Safety-Critical","Python"], excerpt:"Re-implementation of FBRA for verifying neural network controllers, achieving 100% conclusive safety verification across 5 controller configurations in under 1 second each.", overview:"Re-implemented a research-grade formal verification algorithm to certify safety of neural network controllers for autonomous systems.", bullets:["Re-implemented the FBRA algorithm combining forward reachability, backward filtering, and targeted refinement.","Built Python verification pipeline using interval bound propagation and LP-based backward reachability, tested on ground robot navigation and double integrator benchmarks.","Achieved 100% conclusive safety verification across five controller configurations (safe, buggy, PD, default, aggressive), all under 1 second.","Demonstrated FBRA's ability to detect unsafe behaviors in biased controllers while resolving inconclusive cases from forward-only approaches."], achievement:"🏆 100% conclusive safety verification across 5 controllers · All under 1 second" },
   { id:"fgsm", category:"safety", title:"Adversarial Attack Simulation (FGSM)", meta:"Northeastern University", tags:["FGSM","ML Security","TensorFlow","MNIST","Robustness"], excerpt:"Systematic adversarial attack study on neural network classifiers to understand safety implications for robotic perception in safety-critical systems.", overview:"Explored neural network vulnerabilities through systematic adversarial attacks, with focus on safety implications for robotic perception in safety-critical applications.", bullets:["Trained MNIST classifier and attacked it using constant offsets, noise injection, standard FGSM, and targeted FGSM.","Analyzed sensitivity of neural networks to input perturbations of varying magnitudes and directions.","Connected findings to real-world robotics safety: adversarial robustness is critical for perception in autonomous navigation and manipulation.","Results informed understanding of verifiable ML requirements for deploying neural network policies."], achievement:"🏆 Demonstrated NN vulnerabilities relevant to safety-critical robotic systems" },
   { id:"cnc", category:"manipulation", title:"Vision-Based CNC Pick-and-Place with ML", meta:"Anna University · Nov 2023 – Feb 2024 · Bachelor's Thesis", tags:["CNN","Computer Vision","G-code","Raspberry Pi","Automation"], excerpt:"ML-enabled CNC pick-and-place system achieving 99% picking accuracy, integrating computer vision with G-code generation. Published as undergraduate thesis.", overview:"Led the computer vision development of a fully automated CNC pick-and-place system for the undergraduate capstone, integrating ML-based recognition with hardware control.", bullets:["Led CV development implementing contour detection, Canny edge detection, and template matching for autonomous object recognition.","Trained and integrated CNN achieving 99% picking accuracy across three coin types with scalability to 10+ object classes.","Programmed Raspberry Pi to coordinate vision processing with G-code generation for a fully automated system.","Demonstrated applications including automated game piece manipulation and QR code-based blood sample identification.","Published as undergraduate bachelor's thesis, supervised by Dr. N. Ramadass."], achievement:"🏆 99% picking accuracy · Published undergraduate thesis" },
-  { id:"continuum", category:"manipulation", title:"Tendon-Driven Continuum Robot", meta:"Anna University · Oct 2023 – Dec 2023", tags:["Continuum Robotics","Arduino","PCB Design","Servo Control","Kinematics"], excerpt:"Designed and fabricated a continuum robot with infinite DoF using tendon actuation, achieving 8 distinct end-effector positions with custom PCB integration.", overview:"Designed, fabricated, and controlled a tendon-driven continuum robot — a system with theoretically infinite DoF — exploring soft robotic principles for constrained-space manipulation.", bullets:["Designed and fabricated continuum robot with infinite DoF using tendon-based actuation and servo motor control.","Developed Arduino UNO control algorithms achieving 8 distinct end-effector positions through coordinated tendon actuation.","Designed and fabricated a custom PCB shield for Arduino UNO integrating multiple servo motor drivers.","Characterized kinematic behavior and demonstrated working prototype for constrained-space applications."], achievement:"🏆 8 distinct end-effector positions with custom PCB integration" },
+  { id:"continuum", category:"manipulation", title:"Tendon-Driven Continuum Robot", meta:"Anna University · Oct 2023 – Dec 2023", tags:["Continuum Robotics","Arduino","PCB Design","Servo Control","Kinematics"], excerpt:"Designed and fabricated a continuum robot with infinite DoF using tendon actuation, achieving 8 distinct end-effector positions with custom PCB integration.", overview:"Designed, fabricated, and controlled a tendon-driven continuum robot, a system with theoretically infinite DoF, exploring soft robotic principles for constrained-space manipulation.", bullets:["Designed and fabricated continuum robot with infinite DoF using tendon-based actuation and servo motor control.","Developed Arduino UNO control algorithms achieving 8 distinct end-effector positions through coordinated tendon actuation.","Designed and fabricated a custom PCB shield for Arduino UNO integrating multiple servo motor drivers.","Characterized kinematic behavior and demonstrated working prototype for constrained-space applications."], achievement:"🏆 8 distinct end-effector positions with custom PCB integration" },
   { id:"agri-rover", category:"navigation", title:"Autonomous Agricultural Monitoring Rover", meta:"Anna University · Dec 2021 – Mar 2022", tags:["Autonomous Nav","Sensor Fusion","Fusion 360","Raspberry Pi","IoT"], excerpt:"Novel arch-shaped chassis design for non-disruptive crop-row navigation with IoT sensor fusion. Recognized at university ideathon.", overview:"Designed and built an autonomous agricultural monitoring rover with a novel mechanical chassis, integrating sensor fusion and IoT connectivity for remote crop monitoring.", bullets:["Designed novel arch-shaped chassis for non-disruptive crop-row navigation, modeled in Fusion 360 and fabricated via 3D printing.","Integrated Raspberry Pi with L298N motor driver for teleoperated control.","Developed sensor fusion combining soil moisture and humidity sensors with IoT connectivity.","Recognized at university ideathon for innovative mechanical design approach."], achievement:"🏆 Ideathon recognition for novel arch-chassis mechanical design" }
 ];
 
@@ -643,7 +630,11 @@ function closeDetail() {
 function showMain(anchor) {
   document.getElementById('detailView').classList.remove('active');
   document.getElementById('mainView').classList.remove('hidden');
-  if (anchor) setTimeout(() => { const el = document.getElementById(anchor); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 50);
+  if (anchor === 'about') {
+    setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, 50);
+  } else if (anchor) {
+    setTimeout(() => { const el = document.getElementById(anchor); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 50);
+  }
 }
 
 // ── Scroll animations ─────────────────────────────────────────
