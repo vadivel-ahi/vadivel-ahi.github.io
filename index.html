@@ -31,6 +31,10 @@
         h2::after { content: ''; display: block; width: 100px; height: 4px; background: #ffd700; margin: 1rem auto; }
         h3 { font-size: 1.8rem; color: #2c5282; margin: 1.5rem 0 1rem; }
 
+        /* Domain pills in about */
+        .domain-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+        .domain-pill { background: #eef4fb; color: #2c5282; padding: 0.35rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1.5px solid #c3d9f5; }
+
         /* Timeline */
         .timeline { position: relative; padding: 2rem 0; }
         .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: linear-gradient(to bottom, #2c5282, #ffd700); }
@@ -152,10 +156,10 @@
             <img id="heroPhoto" src="" alt="Ahilesh Vadivel" style="width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:center top;border:4px solid #ffd700;box-shadow:0 4px 20px rgba(0,0,0,0.35);">
             <div style="text-align:left;">
                 <h1 style="margin-bottom:0.25rem;">Ahilesh Vadivel</h1>
-                <div class="tagline" style="margin-bottom:0;">Robotics Engineer | Dynamic Locomotion Specialist</div>
+                <div class="tagline" style="margin-bottom:0;">Robotics Engineer &nbsp;|&nbsp; Locomotion &middot; Perception &middot; Navigation &middot; Control</div>
             </div>
         </div>
-        <div class="subtitle">Bridging classical control theory with modern learning-based approaches to enable intelligent, dynamic movement in autonomous systems. Passionate about humanoids, quadrupeds, and the future of mobile manipulation.</div>
+        <div class="subtitle">Robotics engineer with deep expertise across the full stack — from learning-based locomotion and RL-trained quadruped controllers to real-time perception, multi-robot SLAM, and neural network safety verification. I build systems that move intelligently, see accurately, and operate reliably.</div>
         <div class="hero-buttons">
             <a href="#projects" onclick="showMain('projects');return false;" class="btn btn-primary">View Projects</a>
             <a href="Ahilesh_Vadivel_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
@@ -172,9 +176,19 @@
                         <div style="margin-top:0.75rem;font-size:0.85rem;color:#666;font-weight:500;">M.S. Robotics, Northeastern<br>GPA: 4.0 / 4.0</div>
                     </div>
                     <div style="flex:1;min-width:260px;">
-                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">I'm a robotics engineer completing my Master's in Robotics (ECE concentration) at Northeastern University, graduating April 2026 with a 4.0 GPA. My journey began with a childhood fascination for how machines move, evolved through strategic foundation-building in Electronics & Communication Engineering at Anna University, and has culminated in specialized expertise in dynamic locomotion, learning-based control, and autonomous systems.</p>
+                        <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">I'm a robotics engineer who recently completed my M.S. in Robotics (ECE concentration) at Northeastern University (May 2026, 4.0 GPA). My work spans four interconnected domains: <strong>dynamic locomotion</strong> (RL-trained quadruped policies, terrain-aware control), <strong>autonomous navigation</strong> (multi-robot SLAM, localization, path planning), <strong>perception and learning</strong> (CNNs, Vision Transformers, transfer learning, real-time recognition), and <strong>manipulation and soft robotics</strong> (Kresling origami grippers, continuum robots, published research in <em>Soft Robotics</em>). I'm equally comfortable working at the algorithm level in Python/PyTorch and at the systems level in ROS2/C++ with embedded hardware.</p>
+
+                        <div class="domain-pills">
+                            <span class="domain-pill">🦾 Dynamic Locomotion</span>
+                            <span class="domain-pill">🤖 Autonomous Mobile Robots</span>
+                            <span class="domain-pill">👁️ Perception &amp; ML</span>
+                            <span class="domain-pill">🦿 Manipulation</span>
+                            <span class="domain-pill">⚙️ Controls &amp; Embedded</span>
+                        </div>
+
                         <p style="font-size:1.1rem;line-height:1.8;margin-bottom:1rem;">What drives me is the challenge of making robots move intelligently through complex environments — whether it's a quadruped learning locomotion through reinforcement learning, a multi-robot team collaboratively mapping an unknown space, or a neural network controller whose safety can be formally verified.</p>
-                        <p style="font-size:1.1rem;line-height:1.8;"><strong>Currently seeking:</strong> Full-time opportunities in dynamic locomotion, legged robotics, autonomous navigation, and mobile manipulation, starting May 2026. Available on F-1 OPT.</p>
+
+                        <p style="font-size:1.1rem;line-height:1.8;"><strong>Currently seeking:</strong> Full-time opportunities starting May 2026 in dynamic locomotion, autonomous mobile robots, perception &amp; learning systems, manipulation, or controls engineering. Available on F-1 OPT &nbsp;|&nbsp; Open to relocation within the United States.</p>
                     </div>
                 </div>
             </div>
@@ -187,9 +201,9 @@
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">2020–2024</div><h3>Foundation Building: B.E. in Electronics & Communication</h3><p>Strategic decision to master electronics fundamentals at Anna University's College of Engineering Guindy. Completed projects ranging from agricultural monitoring rovers to continuum robots.</p></div></div>
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">Summer 2022</div><h3>Research Discovery: CSIR Internship</h3><p>Research internship at CSIR Central Scientific Instruments Organisation developing portable vaccine storage systems — solidifying my interest in systematic engineering and graduate research.</p></div></div>
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">2023–2024</div><h3>Integration Mastery: Vision-Based CNC Capstone</h3><p>Led computer vision development for an ML-enabled CNC pick-and-place system achieving 99% picking accuracy. Published as bachelor's thesis.</p></div></div>
-                <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">2024–Present</div><h3>Specialization: M.S. in Robotics at Northeastern (4.0 GPA)</h3><p>Systematic exploration through graduate coursework tackling 12+ hands-on projects spanning RL-based quadruped locomotion, deep learning perception, SLAM, formal verification, and soft robotics.</p></div></div>
+                <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">2024–2026</div><h3>Specialization: M.S. in Robotics at Northeastern (4.0 GPA)</h3><p>Systematic exploration through graduate coursework tackling 12+ hands-on projects spanning RL-based quadruped locomotion, deep learning perception, SLAM, formal verification, and soft robotics.</p></div></div>
                 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">Jan 2025–Dec 2025</div><h3>Research Experience: PARSES Lab Graduate RA</h3><p>Contributed to a 4-DoF soft origami robot arm published in <em>Soft Robotics</em> journal. Independently pioneered in-hand manipulation with Kresling grippers at 85% success rate.</p></div></div>
-                <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">April 2026</div><h3>Next Chapter: Full-Time Robotics Engineer</h3><p>Graduating with specialized expertise in dynamic locomotion, learning-based control, navigation, and perception. Ready to tackle challenges in humanoid robotics, quadruped locomotion, or mobile manipulation.</p></div></div>
+                <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-date">May 2026</div><h3>Next Chapter: Full-Time Robotics Engineer</h3><p>Graduated with expertise spanning dynamic locomotion, learning-based control, autonomous navigation, perception, and manipulation. Ready to contribute across legged robotics, mobile robots, or intelligent systems teams.</p></div></div>
             </div>
         </section>
 
@@ -246,8 +260,9 @@
             </div>
             <div style="text-align:center;margin-top:3rem;padding:2rem;background:white;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
                 <h3 style="color:#1e3a5f;margin-bottom:1rem;">Currently Seeking Opportunities</h3>
-                <p style="font-size:1.1rem;line-height:1.8;">I'm actively looking for full-time positions starting May 2026 in:<br><strong>Dynamic Locomotion · Legged Robotics · Autonomous Navigation · Mobile Manipulation · Controls Engineering · Perception Systems</strong></p>
-                <p style="margin-top:1rem;color:#666;">Available on F-1 OPT | Open to relocation within the United States</p>
+                <p style="font-size:1.1rem;line-height:1.8;">I'm actively looking for full-time positions starting May 2026 in:<br>
+                <strong>Dynamic Locomotion &middot; Legged Robotics &middot; Autonomous Navigation &middot; Mobile Robots &middot; Perception &amp; ML &middot; Manipulation &middot; Controls Engineering &middot; Embedded Systems</strong></p>
+                <p style="margin-top:1rem;color:#666;">Available on F-1 OPT &nbsp;|&nbsp; Open to relocation within the United States</p>
             </div>
         </section>
     </div>
@@ -281,37 +296,28 @@ const SVGS = {
       <linearGradient id="gt3" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#7a4a1a"/><stop offset="100%" stop-color="#7a4a1a" stop-opacity="0"/></linearGradient>
     </defs>
     <rect width="${w}" height="${h}" fill="url(#gt1)"/>
-    <!-- terrain strips: flat ground -->
     <rect x="0" y="${h*0.72}" width="${w*0.18}" height="${h*0.28}" fill="url(#gt2)" opacity="0.9"/>
     <text x="${w*0.09}" y="${h*0.92}" text-anchor="middle" fill="#7fff9a" font-size="${h*0.085}" font-family="monospace" font-weight="bold">flat</text>
-    <!-- slope terrain -->
     <polygon points="${w*0.18},${h} ${w*0.35},${h} ${w*0.35},${h*0.6} ${w*0.18},${h*0.72}" fill="rgba(200,160,60,0.35)"/>
     <text x="${w*0.265}" y="${h*0.92}" text-anchor="middle" fill="#ffd700" font-size="${h*0.08}" font-family="monospace" font-weight="bold">slope</text>
-    <!-- stairs terrain -->
     <g opacity="0.8">
       <rect x="${w*0.36}" y="${h*0.78}" width="${w*0.06}" height="${h*0.22}" fill="rgba(100,180,255,0.4)"/>
       <rect x="${w*0.42}" y="${h*0.68}" width="${w*0.06}" height="${h*0.32}" fill="rgba(100,180,255,0.4)"/>
       <rect x="${w*0.48}" y="${h*0.58}" width="${w*0.06}" height="${h*0.42}" fill="rgba(100,180,255,0.4)"/>
     </g>
     <text x="${w*0.455}" y="${h*0.92}" text-anchor="middle" fill="#64b4ff" font-size="${h*0.075}" font-family="monospace" font-weight="bold">stairs</text>
-    <!-- rough terrain -->
     <polyline points="${w*0.55},${h} ${w*0.56},${h*0.75} ${w*0.58},${h*0.82} ${w*0.6},${h*0.68} ${w*0.62},${h*0.78} ${w*0.64},${h*0.65} ${w*0.66},${h*0.73} ${w*0.68},${h*0.6} ${w*0.7},${h*0.72} ${w*0.72},${h}" fill="rgba(255,150,80,0.3)" stroke="rgba(255,150,80,0.6)" stroke-width="1.5"/>
     <text x="${w*0.635}" y="${h*0.92}" text-anchor="middle" fill="#ff9a50" font-size="${h*0.075}" font-family="monospace" font-weight="bold">rough</text>
-    <!-- quadruped robot above terrain -->
     <ellipse cx="${w*0.82}" cy="${h*0.38}" rx="${w*0.07}" ry="${h*0.09}" fill="#ffd700" opacity="0.9"/>
     <ellipse cx="${w*0.82}" cy="${h*0.26}" rx="${w*0.045}" ry="${h*0.065}" fill="#ffd700" opacity="0.9"/>
-    <!-- robot legs -->
     <line x1="${w*0.75}" y1="${h*0.4}" x2="${w*0.68}" y2="${h*0.53}" stroke="#ffd700" stroke-width="2" opacity="0.8"/>
     <line x1="${w*0.77}" y1="${h*0.45}" x2="${w*0.72}" y2="${h*0.58}" stroke="#ffd700" stroke-width="2" opacity="0.8"/>
     <line x1="${w*0.87}" y1="${h*0.4}" x2="${w*0.93}" y2="${h*0.53}" stroke="#ffd700" stroke-width="2" opacity="0.8"/>
     <line x1="${w*0.85}" y1="${h*0.45}" x2="${w*0.9}" y2="${h*0.58}" stroke="#ffd700" stroke-width="2" opacity="0.8"/>
-    <!-- camera FOV lines from robot -->
     <line x1="${w*0.82}" y1="${h*0.31}" x2="${w*0.55}" y2="${h*0.62}" stroke="rgba(100,255,200,0.35)" stroke-width="1.5" stroke-dasharray="4,3"/>
     <line x1="${w*0.82}" y1="${h*0.31}" x2="${w*0.72}" y2="${h*0.66}" stroke="rgba(100,255,200,0.35)" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <!-- accuracy badge -->
     <rect x="${w*0.73}" y="${h*0.06}" width="${w*0.24}" height="${h*0.16}" rx="5" fill="rgba(0,0,0,0.5)" stroke="rgba(127,255,154,0.5)" stroke-width="1"/>
     <text x="${w*0.85}" y="${h*0.155}" text-anchor="middle" fill="#7fff9a" font-size="${h*0.1}" font-family="monospace" font-weight="bold">100%</text>
-    <!-- divider lines between terrain classes -->
     <line x1="${w*0.18}" y1="${h*0.55}" x2="${w*0.18}" y2="${h}" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
     <line x1="${w*0.35}" y1="${h*0.55}" x2="${w*0.35}" y2="${h}" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
     <line x1="${w*0.54}" y1="${h*0.55}" x2="${w*0.54}" y2="${h}" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
